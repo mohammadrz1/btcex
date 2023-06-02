@@ -1,0 +1,19 @@
+/* GENERAL CSS [START] */
+/* make css varibles */
+:root{
+    --primary-color: #0C0E11;
+    --grey-color: #999999;/*grey*/
+    --white-text: #FFFFFF;/*white*/
+    --blue-color: #3E7BF6;/*blue*/
+    --green-color: #3FD194;/*green*/
+    --red-color: #F84960; /*red*/
+    --background-color: #17181E;
+    --help-btn: #2C79B7;
+}
+/* Remove margin and padding for all of items */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+/* GENERAL CSS [END] */
