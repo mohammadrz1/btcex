@@ -17,3 +17,22 @@
     box-sizing: border-box;
 }
 /* GENERAL CSS [END] */
+body{
+    background-color: var(--background-color);
+    color: var(--white-text);
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+}
+.container h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.container h3{
+}
+.container p{
+    color: var(--grey-color);
+    font-size: 15px;
+    margin-top: 16px;
+}
