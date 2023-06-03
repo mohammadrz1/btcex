@@ -11,9 +11,48 @@
     --help-btn: #2C79B7;
 }
 /* Remove margin and padding for all of items */
-*{
+body{
+    background-color: rgb(23, 24, 30);
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
+
+
 /* GENERAL CSS [END] */
+
+/* IMG CSS [START]*/
+img{
+    width: 100px;
+    height: 100px;
+    overflow-clip-margin: content-box;
+    max-width: 120px;
+    font-size: 0px;
+    display: inline-block;
+    width: 95px
+}
+/*IMG CSS [END]*/
+
+.footer{
+    display: block;
+    padding-top: 38px;
+    padding-bottom: 14px;
+
+}
+.table{
+    
+    
+    
+}
+.About{
+    color: #F84960;
+    display:flex;
+    flex-direction: column;
+}
+a{
+    color: #FFFFFF;
+}
+p{
+    color: antiquewhite;
+
+}
