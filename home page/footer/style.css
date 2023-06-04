@@ -33,22 +33,40 @@ img{
 }
 /*IMG CSS [END]*/
 
-.footer{
-    display: block;
-    padding-top: 38px;
-    padding-bottom: 14px;
+footer{
+    width: 100%;
+    text-align: center;
+}
+
+.countainer{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 
 }
+
 .table{
-    
-    
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
-.About{
-    color: #F84960;
-    display:flex;
+
+.footer_item_card{
+    display: flex;
     flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+
+
 }
+
+.footer_item_card a:first-of-type{
+    color: 
+}
+
+
 a{
     color: #FFFFFF;
 }
