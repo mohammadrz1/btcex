@@ -8,6 +8,7 @@
     --green-color: #3FD194;/*green*/
     --red-color: #F84960; /*red*/
     --background-color: #17181E;
+    --bg-dropdown: rgb(28, 30, 34);
     --help-btn: #2C79B7;
 }
 /* Remove margin and padding for all of items */
