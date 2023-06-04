@@ -1,3 +1,35 @@
+/* add font  [START]*/
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Thin.ttf);
+    font-weight: 100;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Light.ttf);
+    font-weight: 300;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Medium.ttf);
+    font-weight: 500;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Bold.ttf);
+    font-weight:700;
+}
+@font-face{
+    font-family:Harmony;
+    src: url(fonts/HarmonyOS_Sans_Black.ttf);
+    font-weight: 900;
+}
+/* add font  [END]*/
 /* GENERAL CSS [START] */
 /* make css varibles */
 :root{
@@ -15,5 +47,127 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family:Harmony;
 }
 /* GENERAL CSS [END] */
+/* add some styles to body*/
+body{
+    background-color: var(--background-color);
+    color: var(--white-text);
+}
+/* add some styles to container */
+.container{
+    width: 100%;
+    max-width: 1200px;
+}
+/* text with font size 40px can get these styles*/
+.css-fo40{
+    font-size: 40px;
+    font-weight: 700;
+}
+/* text with font size 24px can get these styles*/
+.css-fo24{
+    font-size: 24px;
+    font-weight: 700;
+}
+/* text with font size 20px can get these styles*/                        
+.css-fo20{
+    font-size: 20px;
+    font-weight: 500;
+}
+/* text with font size 18px can get these styles*/
+.css-fo18{
+    font-size: 18px;
+    font-weight: 700;
+}
+/* text with font size 16px can get these styles*/
+.css-fo16{
+    font-size: 16px; /*we can use this class for numbers in chart*/
+}
+/* Paragraph with font size 20px can get these properties*/
+.css-fop20{
+    color: var(--grey-color);
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+/* Paragraph with font size 18px can get these properties*/
+.css-fop18{
+    color: var(--grey-color);
+    font-size: 18px;
+}
+/* Paragraph with font size 16px can get these properties*/
+.css-fop16{
+    color: var(--grey-color);
+    font-size: 16px;
+}
+/* Paragraph with font size 14px can get these properties*/
+.css-fop14{
+    color: var(--grey-color);
+    font-size: 14px;
+}
+/* Paragraph with font size 12px can get these properties*/
+.css-fop12{
+    color: var(--grey-color);
+    font-size: 12px;
+    font-weight: 400;
+}
+/* Add this class to btn's that skew */
+.skewX{
+    border-radius: 0px 50px 50px 0px;
+    transform: skewX(-5deg);
+}
+/* header code [START]  */
+/* container (all) code [start] */
+header{
+    width: 100%;
+    display: flex;
+    background-color:var(--background-color) ;
+    text-align: center;
+    margin: 0 auto;
+}
+/* container (all) code [end] */
+/* header-left [start] */
+/* container code [start] */
+#header-left{
+    display: flex;
+    float: left;
+    padding: 10px 24px 10px 24px;
+}
+/* container code [end] */
+/* logo [start]  */
+#logo{
+    display: flex;
+}
+#logo *{
+    text-align: left;
+}
+/* logo img [start] */
+#logo>img{
+    width: 92px;
+}
+/* logo img [end] */
+/* logo list [start] */
+#logo>ul{
+    list-style: none;
+    display: flex;
+}
+#logo>ul>li>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+#logo>ul>li>ul>span{
+    font-family:Harmony;
+    font-weight: 500;
+}
+#logo>ul>li>ul>li{
+    width:240px;
+    display:flex;
+}
+#logo>ul>li>ul>li>svg{
+    margin-right:14px;
+}
+/* logo list [end] */
+/* logo [end]  */
+/* header-left [end] */
