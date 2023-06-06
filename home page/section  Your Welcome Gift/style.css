@@ -129,7 +129,7 @@ body{
     transform: skewX(-5deg);
 }
 
-
+/* STRAT SECTION CSS */
 .section{
     padding: 120px 0;
     display: flex;
@@ -137,31 +137,27 @@ body{
     justify-content: center;
     align-items: center;
 }
-/*bbbb */
-/* .container{
-    display: block;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 16px;
-} */
-   
+   /* END SECTION CSS */
 
+   /* START SECTION-L CSS */
 .section-L{
     width: 600px;
     text-align: left;
     display: block;
+    padding-top: 34px;
 }
+/* END SECTION-L CSS */
 
-
+/* START P CSS */
 p{
     margin-top: 20px;
     font-size: 25px;
     line-height: 36px;
     width: 89%;
-
 }
+/* END P CSS */
 
+/* START SECTION-L DIV  CSS */
 .section-L div{
     background-color: #2C79B7;
     width: 298px;
@@ -169,20 +165,34 @@ p{
     cursor: pointer;
     margin-top: 29px;
     text-align: center;
-    
-
 }
+/* END SECTION-L DIV  CSS */
+
+/* START SECTION-L DIV  CSS */
+.section-L div a{
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--white-text);
+    text-decoration: none;
+}
+/* END SECTION-L DIV  CSS */
+
+/* START SECTION-L DIV:HOVER  CSS */
 .section-L div:hover{
     background-color:#3E7BF6;
 }
+/* END SECTION-L DIV:HOVER  CSS */
 
+/* START SECTION-R  CSS */
 .section-R{
    text-align: left;
    min-width: 260px;
 }
+/* END SECTION-R  CSS */
 
-img{
-
+/* START SECTION-R IMG CSS */
+.section-R img{
     width: 370px;
     height: 290px;
 }
+/* END SECTION-R CSS */
