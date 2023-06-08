@@ -48,6 +48,7 @@
     margin: 0%;
     box-sizing: border-box;
     font-family:Harmony;
+    list-style: none;
 }
 /* GENERAL CSS [END] */
 /* add some styles to body*/
@@ -59,6 +60,17 @@ body{
 .container{
     width: 100%;
     max-width: 1200px;
+}
+/* btn news */
+.btn-news{
+    margin-left: 5px;
+    padding: 0 0 0 5px;
+    width: 30px;
+    height: 15px;
+    font-size: 9px;
+    border-radius: 3px;
+    color: var(--white-text) ;
+    background-color:var(--red-color) ;
 }
 /* text with font size 40px can get these styles*/
 .css-fo40{
@@ -151,33 +163,41 @@ header{
 #logo>ul{
     list-style: none;
     display: flex;
-    margin:0;
-}
-#logo>ul:hover>li>ul{
-    display: flex;
-    
+    margin: 0;
 }
 #logo>ul>li{
     display: flex;
-    margin-top:20px;
+    flex-direction: column;
+    position: relative;
 }
 #logo>ul>li>img{
-    position: absolute;
-    top: 10px;
+    margin-top: 3px;
+    height: 17px;
+    width: 34px;
 }
-#logo>ul>li>ul{
-    list-style: none;
+#logo>ul>li>div{
     display: flex;
-    flex-direction: column;
+    position: absolute;
+    top: 30px;
     background-color: #1c1e22;
-    width: 400px;
+    width: 800px;
+    display: none;
+    transition-delay: 4s ;
+    transition: all 5s;
+}
+#logo>ul:hover>li>div{
+    display: flex;
+}
+#logo>ul>li>div>ul{
+    list-style: none;
+    flex-direction: column;
     padding: 26px 20px;
 }
-#logo>ul>li>ul>span{
+#logo>ul>li>div>ul>span{
     font-family:Harmony;
     font-weight: 500;
 }
-#logo>ul>li>ul>li{
+#logo>ul>li>div>ul>li{
     margin-top: 20px;
     width:100%;
     display:flex;
@@ -187,43 +207,38 @@ header{
     border-radius: 10px;
     transition: all 0.2s;
 }
-#logo>ul>li>ul>li>div{
+#logo>ul>li>div>ul>li>div{
     display: flex;
     justify-content: space-between;
 }
-#logo>ul>li>ul>li>div>svg{
+#logo>ul>li>div>ul>li>div>svg{
     margin-right:14px;
 }
-#logo>ul>li>ul>li>svg{
+#logo>ul>li>div>ul>li>svg{
    display: none;
 }
-#logo>ul>li>ul>li:hover>svg{
+#logo>ul>li>div>ul>li:hover>svg{
     opacity: 70%;
     display: block;
 }
-#logo>ul>li>ul>li:hover{
+#logo>ul>li>div>ul>li:hover{
     background-color: rgb(51, 51, 51);
     cursor: pointer;
 }
-#logo>ul>li>ul>li p{
+#logo>ul>li>div>ul>li p{
     margin: 0;
 }
-#logo>ul>li>ul>li>div>div{
+#logo>ul>li>div>ul>li>div>div{
     width: 85.8%;
 }
-#logo>ul>li>ul>li>div>div>div{
+#logo>ul>li>div>ul>li>div>div>div{
     display: flex;
-}
-#logo>ul>li>ul>li>div>div>div>span{
-    margin-left: 5px;
-    text-align: center;
-    width: 30px;
-    height: 15px;
-    font-size: 9px;
-    border-radius: 2px;
-    color: var(--white-text) ;
-    background-color:var(--red-color) ;
 }
 /* logo list [end] */
 /* logo [end]  */
+/* list rghit [start] */
+#list-header-rghit{
+    margin: 2px 0 0 40px;
+}
+/* list rghit [end] */
 /* header-left [end] */
