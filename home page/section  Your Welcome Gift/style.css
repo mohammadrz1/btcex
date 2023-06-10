@@ -86,9 +86,15 @@ body{
 .css-fo16{
     font-size: 16px;
     font-weight: 600;
-    
-    /*we can use this class for numbers in chart*/
 }
+ 
+.css-fo40{
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: 700;
+}
+    /*we can use this class for numbers in chart*/
+
 .css-fop24{
     color: var(--grey-color);
     line-height: 36px;
