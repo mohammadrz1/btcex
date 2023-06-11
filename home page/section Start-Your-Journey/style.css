@@ -60,6 +60,7 @@ body{
 .container{
     width: 100%;
     max-width: 1200px;
+    position: relative;
 }
 /* text with font size 40px can get these styles*/
 .css-fo40{
@@ -156,7 +157,7 @@ body{
     position: absolute;
     top: 50;
     right: 0;
-    translate: -200px -85px;
+    translate: -70px -85px;
 }
 /* select second card and hover it then will apear background image */
 .css-1ig0umz:nth-of-type(3):hover ~.btcex-1pcoxd9{
@@ -167,7 +168,7 @@ body{
     position: absolute;
     top: 50;
     right: 0;
-    translate: -200px -85px;
+    translate: -70px -85px;
 }
 /* select third card and hover it then will apear background image */
 .css-1ig0umz:nth-of-type(5):hover ~.css-16jrh1l{
@@ -178,6 +179,6 @@ body{
     position: absolute;
     top: 50;
     right: 0;
-    translate: -200px -85px;
+    translate: -70px -85px;
 }
 /* end section [start your journey] */
