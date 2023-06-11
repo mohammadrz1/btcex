@@ -113,6 +113,7 @@ body{
     transform: skewX(-5deg);
 }
 /* start section [start your journey] */
+
 .css-kup9ue{
     display: flex;
     margin-top: 65px;
@@ -126,9 +127,58 @@ body{
 
 .css-11437fw{
     padding: 32px 32px 24px;
+    cursor: pointer;
+    transition: .3s;
 }
 
-.css-1ig0umz{
-    padding: 32px 32px 24px;
+.css-11437fw svg{
+    opacity: 0;
 }
+
+.css-1ig0umz:hover{
+    padding: 32px 32px 24px;
+    cursor: pointer;
+    background-color: var(--background-color);
+    box-shadow: 0px 16px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.css-1ig0umz:hover svg{
+    opacity: 1;
+}
+
+.css-1ig0umz:nth-child(1):hover ~.btcex-1f7zayh{
+    background-image: url(images/home-register.2ebb9881.png);
+    background-size: 100% 100%;
+    background-position: center;
+    width: 480px;
+    height: 422px;
+    position: absolute;
+    top: 50;
+    right: 0;
+    translate: -200px -85px;
+}
+
+.css-1ig0umz:nth-of-type(3):hover ~.btcex-1pcoxd9{
+    background-image: url(images/home-deposit.f4459e94.png);
+    background-size: 100% 100%;
+    width: 480px;
+    height: 422px;
+    position: absolute;
+    top: 50;
+    right: 0;
+    translate: -200px -85px;
+}
+
+.css-1ig0umz:nth-of-type(5):hover ~.css-16jrh1l{
+    background-image: url(images/home-perpetual.a99749ed0a9a3cae358f.png);
+    background-size: 100% 100%;
+    width: 480px;
+    height: 422px;
+    position: absolute;
+    top: 50;
+    right: 0;
+    translate: -200px -85px;
+}
+
 /* end section [start your journey] */
