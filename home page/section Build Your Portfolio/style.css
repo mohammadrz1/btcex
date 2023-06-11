@@ -1,0 +1,195 @@
+/* add font  [START]*/
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Thin.ttf);
+    font-weight: 100;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Light.ttf);
+    font-weight: 300;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Medium.ttf);
+    font-weight: 500;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Bold.ttf);
+    font-weight:700;
+}
+@font-face{
+    font-family:Harmony;
+    src: url(fonts/HarmonyOS_Sans_Black.ttf);
+    font-weight: 900;
+}
+/* add font  [END]*/
+/* GENERAL CSS [START] */
+/* make css varibles */
+:root{
+    --primary-color: #0C0E11;
+    --grey-color: #999999;/*grey*/
+    --white-text: #FFFFFF;/*white*/
+    --blue-color: #3E7BF6;/*blue*/
+    --green-color: #3FD194;/*green*/
+    --red-color: #F84960; /*red*/
+    --background-color: #17181E;
+    --help-btn: #2C79B7;
+}
+/* Remove margin and padding for all of items */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:Harmony;
+    list-style: none;
+}
+/* GENERAL CSS [END] */
+/* add some styles to body*/
+body{
+    background-color: var(--background-color);
+    color: var(--white-text);
+}
+/* add some styles to container */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* btn news */
+.btn-news{
+    margin-left: 5px;
+    padding: 0 0 0 5px;
+    width: 30px;
+    height: 15px;
+    font-size: 9px;
+    border-radius: 3px;
+    color: var(--white-text) ;
+    background-color:var(--red-color) ;
+}
+/* text with font size 40px can get these styles*/
+.css-fo40{
+    font-size: 40px;
+    font-weight: 700;
+}
+/* text with font size 24px can get these styles*/
+.css-fo24{
+    font-size: 24px;
+    font-weight: 700;
+}
+/* text with font size 20px can get these styles*/                        
+.css-fo20{
+    font-size: 20px;
+    font-weight: 500;
+}
+/* text with font size 18px can get these styles*/
+.css-fo18{
+    font-size: 18px;
+    font-weight: 700;
+}
+/* text with font size 16px can get these styles*/
+.css-fo16{
+    font-size: 16px; /*we can use this class for numbers in chart*/
+}
+/* Paragraph with font size 20px can get these properties*/
+.css-fop20{
+    color: var(--grey-color);
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+/* Paragraph with font size 18px can get these properties*/
+.css-fop18{
+    color: var(--grey-color);
+    font-size: 18px;
+}
+/* Paragraph with font size 16px can get these properties*/
+.css-fop16{
+    color: var(--grey-color);
+    font-size: 16px;
+}
+/* Paragraph with font size 14px can get these properties*/
+.css-fop14{
+    color: var(--grey-color);
+    font-size: 14px;
+}
+/* Paragraph with font size 12px can get these properties*/
+.css-fop12{
+    color: var(--grey-color);
+    font-size: 12px;
+    font-weight: 400;
+}
+/* Add this class to btn's that skew */
+.skewX{
+    border-radius: 0px 50px 50px 0px;
+    transform: skewX(-5deg);
+}
+/* section Build Your Portfolio [START] */
+/* code of container [start] */
+#Build-Your-Portfolio{
+    width: 100%;
+    background-color: #0C0E11;
+}
+#Build-Your-Portfolio>.container{
+    padding: 50px 0 50px 0;
+}
+/* code of container [end] */
+/* code min of [start] */
+/* code of main container [start] */
+#main-s-Build-Your-Portfolio{
+    width: 100%;
+    border: 1px solid rgb(41, 42, 47);
+    border-radius: 10px;
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(2,30%) 40%;
+}
+/* code of main card  [start]*/
+#main-s-Build-Your-Portfolio>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding: 25px;
+    border-right: 1px solid rgb(41, 42, 47);
+    cursor: pointer;
+    height: 290px;
+}
+#main-s-Build-Your-Portfolio>div>img{
+    width: 110px;
+    margin-top: 45px;
+}
+#main-s-Build-Your-Portfolio>div>p{
+    margin-top: 23px;
+}
+#main-s-Build-Your-Portfolio>div:nth-child(2)>img{
+    margin-top: 40px;
+}
+#main-s-Build-Your-Portfolio>div>div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#main-s-Build-Your-Portfolio>div:last-of-type>div:last-of-type>div{
+    display: flex;
+    flex-direction: column;
+}
+#main-s-Build-Your-Portfolio>div:last-of-type>div>div>div{
+    display: flex;
+}
+#main-s-Build-Your-Portfolio>div:last-of-type>div>div>div>p{
+    color: var(--green-color);
+}
+#main-s-Build-Your-Portfolio>div:last-of-type>div:last-of-type>img{
+    width: 110px;
+}
+/* code of main card  [start]*/
+/* code of main container [end] */
+/* code min of section Build Your Portfolio [end] */
+/* section Build Your Portfolio [END] */
