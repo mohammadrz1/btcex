@@ -113,40 +113,40 @@ body{
     transform: skewX(-5deg);
 }
 /* start section [start your journey] */
-
+/* some style for div of list items and background images/ set display flex and add a margin top */
 .css-kup9ue{
     display: flex;
     margin-top: 65px;
 }
-
+/* div of list items set display flex and add a width */
 .css-yqb7g3{
     display: flex;
     flex-direction: column;
     width: 530px;
 }
-
+/* a class for all of cards when they arent hover */
 .css-11437fw{
     padding: 32px 32px 24px;
     cursor: pointer;
     transition: .3s;
 }
-
+/* select svg in all of cards and giv them opacity 0 */
 .css-11437fw svg{
     opacity: 0;
 }
-
+/* all of cards when get hover will get these styles */
 .css-1ig0umz:hover{
     padding: 32px 32px 24px;
     cursor: pointer;
-    background-color: var(--background-color);
+    background-color: var(--background-color);/*dark lighter*/
     box-shadow: 0px 16px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
 }
-
+/* select svg in all of cards when they hover ,they will get opacity 1 */
 .css-1ig0umz:hover svg{
     opacity: 1;
 }
-
+/* select first card and hover it then will apear background image */
 .css-1ig0umz:nth-child(1):hover ~.btcex-1f7zayh{
     background-image: url(images/home-register.2ebb9881.png);
     background-size: 100% 100%;
@@ -158,7 +158,7 @@ body{
     right: 0;
     translate: -200px -85px;
 }
-
+/* select second card and hover it then will apear background image */
 .css-1ig0umz:nth-of-type(3):hover ~.btcex-1pcoxd9{
     background-image: url(images/home-deposit.f4459e94.png);
     background-size: 100% 100%;
@@ -169,7 +169,7 @@ body{
     right: 0;
     translate: -200px -85px;
 }
-
+/* select third card and hover it then will apear background image */
 .css-1ig0umz:nth-of-type(5):hover ~.css-16jrh1l{
     background-image: url(images/home-perpetual.a99749ed0a9a3cae358f.png);
     background-size: 100% 100%;
@@ -180,5 +180,4 @@ body{
     right: 0;
     translate: -200px -85px;
 }
-
 /* end section [start your journey] */
