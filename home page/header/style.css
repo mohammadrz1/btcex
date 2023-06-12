@@ -65,6 +65,7 @@ body{
 .btn-news{
     margin-left: 5px;
     padding: 0 0 0 5px;
+    display: inline-block;
     width: 30px;
     height: 15px;
     font-size: 9px;
@@ -150,9 +151,11 @@ header{
 /* logo [start]  */
 #logo{
     display: flex;
+    align-items: flex-start;
 }
 #logo *{
     text-align: left;
+    padding: 0;
 }
 /* logo img [start] */
 #logo>img{
@@ -237,8 +240,18 @@ header{
 /* logo list [end] */
 /* logo [end]  */
 /* list rghit [start] */
-#list-header-rghit{
-    margin: 2px 0 0 40px;
+#list-header-left-rghit{
+    margin: 0 0 0 40px;
+}
+#list-header-left-rghit>li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#list-header-left-rghit>li>h4{
+    font-size: 14px;
+    color: var(--white-text);
+    cursor: pointer;
 }
 /* list rghit [end] */
 /* header-left [end] */
