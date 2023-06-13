@@ -226,22 +226,85 @@ body{
     0%{
         transform: translateX(0px);
     }
-    35%{
+    20%{
         transform: translateX(-1180px);
     }
-    65%{
+    30%{
+        transform: translateX(-1180px);
+    }
+    90%{
         transform: translateX(-2350px);
     }
-    /* 100%{
-        transform: translateX(-2500px);
-    } */
+    100%{
+        transform: translateX(-2350px);
+    }
 }
 .swiper-wrapper div{
     animation: swiper 10s ease-in-out infinite 1s;
-    
 }
 .swiper-wrapper img{
     width: 380px;
     border-radius: 10px;
+}
+.btcex-15bnogv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.btcex-15bnogv>span>img{
+    width: 30px;
+}
+.marquee{
+    overflow: hidden;
+    height: 30px;
+    width: 100%;
+}
+.marquee .swiper-slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    color: var(--grey-color);
+    padding: 6px 0px;
+    animation: swiper-slide 10s ease-in-out infinite 1s;
+}
+@keyframes swiper-slide{
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(-40px);
+    }
+    20% {
+        transform: translateY(-40px);
+    }
+    30% {
+        transform: translateY(-80px);
+    }
+    40% {
+        transform: translateY(-80px);
+    }
+    50% {
+        transform: translateY(-120px);
+    }
+    60% {
+        transform: translateY(-120px);
+    }
+    70% {
+        transform: translateY(-160px);
+    }
+    80% {
+        transform: translateY(-160px);
+    }
+    90% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(-200px);
+    }
 }
 /* section welcome to btcex [end] */
