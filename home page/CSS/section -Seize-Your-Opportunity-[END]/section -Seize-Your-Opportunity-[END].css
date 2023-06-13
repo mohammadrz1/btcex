@@ -1,0 +1,362 @@
+/* add font  [START]*/
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Thin.ttf);
+    font-weight: 100;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Light.ttf);
+    font-weight: 300;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Medium.ttf);
+    font-weight: 500;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Bold.ttf);
+    font-weight:700;
+}
+@font-face{
+    font-family:Harmony;
+    src: url(fonts/HarmonyOS_Sans_Black.ttf);
+    font-weight: 900;
+}
+/* add font  [END]*/
+/* GENERAL CSS [START] */
+/* make css varibles */
+:root{
+    --primary-color: #0C0E11;
+    --grey-color: #999999;/*grey*/
+    --white-text: #FFFFFF;/*white*/
+    --blue-color: #3E7BF6;/*blue*/
+    --green-color: #3FD194;/*green*/
+    --red-color: #F84960; /*red*/
+    --background-color: #17181E;
+    --help-btn: #2C79B7;
+}
+/* Remove margin and padding for all of items */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:Harmony;
+    list-style: none;
+}
+/* GENERAL CSS [END] */
+/* add some styles to body*/
+body{
+    background-color: var(--background-color);
+    color: var(--white-text);
+}
+/* add some styles to container */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* btn news */
+.btn-news{
+    margin-left: 5px;
+    padding: 0 0 0 5px;
+    width: 30px;
+    height: 15px;
+    font-size: 9px;
+    border-radius: 3px;
+    color: var(--white-text) ;
+    background-color:var(--red-color) ;
+}
+/* text with font size 40px can get these styles*/
+.css-fo40{
+    font-size: 40px;
+    font-weight: 700;
+}
+/* text with font size 24px can get these styles*/
+.css-fo24{
+    font-size: 24px;
+    font-weight: 700;
+}
+/* text with font size 20px can get these styles*/                        
+.css-fo20{
+    font-size: 20px;
+    font-weight: 500;
+}
+/* text with font size 18px can get these styles*/
+.css-fo18{
+    font-size: 18px;
+    font-weight: 700;
+}
+/* text with font size 16px can get these styles*/
+.css-fo16{
+    font-size: 16px; /*we can use this class for numbers in chart*/
+}
+.css-fo14{
+    font-size: 14px;
+}
+.css-fo12{
+    font-size: 12px;
+}
+/* Paragraph with font size 20px can get these properties*/
+.css-fop20{
+    color: var(--grey-color);
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+/* Paragraph with font size 18px can get these properties*/
+.css-fop18{
+    color: var(--grey-color);
+    font-size: 18px;
+}
+/* Paragraph with font size 16px can get these properties*/
+.css-fop16{
+    color: var(--grey-color);
+    font-size: 16px;
+}
+/* Paragraph with font size 14px can get these properties*/
+.css-fop14{
+    color: var(--grey-color);
+    font-size: 14px;
+}
+/* Paragraph with font size 12px can get these properties*/
+.css-fop12{
+    color: var(--grey-color);
+    font-size: 12px;
+    font-weight: 400;
+}
+/* Add this class to btn's that skew */
+.skewX{
+    border-radius: 0px 50px 50px 0px;
+    transform: skewX(-5deg);
+}
+ /* section  Seize Your Opportunity [START]  */
+section#Seize-Your-Opportunity{
+    width: 100%;
+    margin: 60px 0;
+    padding: 60PX 0;
+    background-color: var(--background-color);
+}
+/* container [start] */
+section#Seize-Your-Opportunity>.container{
+    display: flex;
+    flex-direction: column;
+}
+/* container [end] */
+/* title [start] */
+/* title container [start] */
+#title-S-Seize-Your-Opportunity{
+    display: flex;
+    justify-content: space-between;
+}
+/* title container [end] */
+/* title left [start] */
+#title-S-Seize-Your-Opportunity-rghit{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    margin-top: 15px;
+    border: 1px solid rgb(41, 42, 47);
+    padding: 7px;
+    border-radius: 5px;
+}
+#title-S-Seize-Your-Opportunity-rghit>svg{
+    height: 25px;
+    fill: var(--grey-color);
+}  
+#title-S-Seize-Your-Opportunity-rghit>input{
+    background-color: transparent;
+    border: none;
+    height: 25px;
+    font-size: 13px;
+    color: var(--grey-color);
+    width: 200px;
+} 
+#title-S-Seize-Your-Opportunity-rghit>hr{
+    border: .5px solid var(--grey-color);
+    opacity: .1;
+    height: 25px;
+    margin: 0 10px;
+}
+#title-S-Seize-Your-Opportunity-rghit>input:focus~div{
+    display: flex;
+}
+/* zer magmo input [start] */
+#title-S-Seize-Your-Opportunity-rghit>div{
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    z-index: 5;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 16px;
+    height: 300px;
+    width: 250px;
+    padding: 15px;
+    top: 40px;
+}
+#title-S-Seize-Your-Opportunity-rghit>div>ul{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+#title-S-Seize-Your-Opportunity-rghit>div>ul>*{
+    cursor: pointer;
+}
+#title-S-Seize-Your-Opportunity-rghit>div>ul>h4{
+    padding-bottom:10px ;
+    width: 32px;
+    font-weight: 700;
+    border-bottom: 2px solid rgb(62, 123, 246);
+}
+#title-S-Seize-Your-Opportunity-rghit>div>ul:first-of-type{
+    width: 100%;
+}
+#title-S-Seize-Your-Opportunity-rghit>div{
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 290px;
+}
+#title-S-Seize-Your-Opportunity-rghit>div>ul>li{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom:5px ;
+    padding-left:10px ;
+    padding-right: 10px;
+    border-radius: 4px;
+}
+#title-S-Seize-Your-Opportunity-rghit>div>ul>li:hover{
+    background-color: rgba(153, 153, 153, 0.3) ;
+}
+#title-S-Seize-Your-Opportunity-rghit>div>ul:last-of-type{
+    position: absolute;
+    left:60px;
+}
+#title-S-Seize-Your-Opportunity-rghit>div>ul:last-of-type>h4{
+    border: none;
+}
+#title-S-Seize-Your-Opportunity-rghit>div>ul:last-of-type>li{
+    display: none;
+}
+#title-S-Seize-Your-Opportunity-rghit>div>ul>li:first-of-type{
+    margin-top: 14px;
+}
+#title-S-Seize-Your-Opportunity-rghit>div>ul>li>svg{
+    fill: #999999;
+}
+/* zer magmo input [end] */
+/* title left [end] */
+/* title [end] */
+/* body [start] */
+/* code container body [start] */
+#body-S-Seize-Your-Opportunity{
+    width: 100%;
+    border: 1px solid rgb(41, 42, 47);
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 30px 30px ;
+}
+/* code container body [end] */
+/* title body [start] */
+#title-body-S-Seize-Your-Opportunity{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#title-body-S-Seize-Your-Opportunity>div{
+    display: flex;
+}
+#title-body-S-Seize-Your-Opportunity>div:last-of-type{
+    justify-content: space-between;
+    width: 100%;
+}
+#title-body-S-Seize-Your-Opportunity h4{
+    color: var(--white-text);
+    border-bottom: 2px solid var(--blue-color);
+    z-index: 2;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+#title-body-S-Seize-Your-Opportunity div:first-of-type h3{
+    margin-left: 50px;
+}
+#title-body-S-Seize-Your-Opportunity div:last-of-type h3{
+    margin: 10px 0;
+}
+#title-body-S-Seize-Your-Opportunity h3{
+    color: var(--grey-color);
+    margin-left: 50px;
+    cursor: pointer;
+    margin: 0;
+}
+#title-body-S-Seize-Your-Opportunity>hr{
+    position: absolute;
+    top: 27px;
+    width: 1115px;
+}
+/* title body [end] */
+/* body body [start] */
+#body-body-S-Seize-Your-Opportunity{
+    display: flex;
+    flex-direction: column;
+}
+#body-body-S-Seize-Your-Opportunity h4{
+    color: var(--white-text);
+}
+#body-body-S-Seize-Your-Opportunity>div{
+    display: flex;
+    padding: 15px 0;
+    border-top: 1px solid rgb(41, 42, 47);
+    width: 100%;
+    border-bottom: 1px solid rgb(41, 42, 47);
+    cursor: pointer;  
+    height: 70px;  
+}
+#body-body-S-Seize-Your-Opportunity>div:hover{
+    background-color: rgb(41, 42, 47);
+}
+#body-body-S-Seize-Your-Opportunity>div p{
+    color: var(--grey-color);
+    font-size: 13px;
+}
+#body-body-S-Seize-Your-Opportunity>div img{
+    height: 30px;
+}
+#body-body-S-Seize-Your-Opportunity>div h4{
+    font-weight: 400;
+}
+#body-body-S-Seize-Your-Opportunity>div>div{
+    display: flex;
+}
+#body-body-S-Seize-Your-Opportunity>div>div:first-of-type>h4{
+    margin: 5px 0 0 10px;
+    font-weight: 700;
+}
+#body-body-S-Seize-Your-Opportunity>div>div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    margin-left: 136px;
+}
+#body-body-S-Seize-Your-Opportunity>div>div:nth-of-type(3){
+    margin-left: 180px;
+}
+#body-body-S-Seize-Your-Opportunity>div>div:nth-of-type(4){
+    margin-left: 230px;
+}
+#body-body-S-Seize-Your-Opportunity>div>svg{
+    margin-left: 230px;
+}
+#body-body-S-Seize-Your-Opportunity>svg{
+    margin: 20px 0 0 20px;
+    cursor: pointer;
+}
+/* body body [end] */
+/* body [end] */
+ /* section  Seize Your Opportunity [END]  */

@@ -134,3 +134,39 @@ body{
     border-radius: 0px 50px 50px 0px;
     transform: skewX(-5deg);
 }
+/* section Your Welcome Gift [START] */
+section.Your-Welcome-Gift{
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 400px;
+}
+.Your-Welcome-Gift>.container{
+    padding: 40px 0;
+}
+/* START SECTION-L DIV  CSS */
+.section-L-S-Your-Welcome-Gift{
+    padding-top:50px;
+}
+.section-L-S-Your-Welcome-Gift div{
+    background-color: #2C79B7;
+    width: 298px;
+    height: 45px;
+    cursor: pointer;
+    margin-top: 29px;
+    text-align: center;
+}
+/* START SECTION-L DIV  CSS */
+.section-L-S-Your-Welcome-Gift div a{
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--white-text);
+    text-decoration: none;
+}
+.section-R-S-Your-Welcome-Gift{
+    width: 35%;
+}
+.section-R-S-Your-Welcome-Gift>img{
+    width: 100%;
+    display: block;
+}
+/* section Your Welcome Gift [ENDS] */

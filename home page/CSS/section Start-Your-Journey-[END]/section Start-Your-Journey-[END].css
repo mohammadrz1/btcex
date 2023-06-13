@@ -25,7 +25,7 @@
     font-weight:700;
 }
 @font-face{
-    font-family:Harmony;
+    font-family:Harmony ;
     src: url(fonts/HarmonyOS_Sans_Black.ttf);
     font-weight: 900;
 }
@@ -40,6 +40,7 @@
     --green-color: #3FD194;/*green*/
     --red-color: #F84960; /*red*/
     --background-color: #17181E;
+    --bg-dropdown: rgb(28, 30, 34);
     --help-btn: #2C79B7;
 }
 /* Remove margin and padding for all of items */
@@ -47,7 +48,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family:Harmony;
+    font-family: Harmony;
 }
 /* GENERAL CSS [END] */
 /* add some styles to body*/
@@ -57,10 +58,9 @@ body{
 }
 /* add some styles to container */
 .container{
-    display: flex;
-    justify-content: space-between;
     width: 100%;
     max-width: 1200px;
+    position: relative;
 }
 /* text with font size 40px can get these styles*/
 .css-fo40{
@@ -75,7 +75,7 @@ body{
 /* text with font size 20px can get these styles*/                        
 .css-fo20{
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
 }
 /* text with font size 18px can get these styles*/
 .css-fo18{
@@ -84,22 +84,7 @@ body{
 }
 /* text with font size 16px can get these styles*/
 .css-fo16{
-    font-size: 16px;
-    font-weight: 600;
-}
- 
-.css-fo40{
-    font-size: 40px;
-    line-height: 47px;
-    font-weight: 700;
-}
-    /*we can use this class for numbers in chart*/
-
-.css-fop24{
-    color: var(--grey-color);
-    line-height: 36px;
-    font-size: 24px;
-    margin-top: 30px;
+    font-size: 16px; /*we can use this class for numbers in chart*/
 }
 /* Paragraph with font size 20px can get these properties*/
 .css-fop20{
@@ -123,14 +108,84 @@ body{
     color: var(--grey-color);
     font-size: 14px;
 }
-/* Paragraph with font size 12px can get these properties*/
-.css-fop12{
-    color: var(--grey-color);
-    font-size: 12px;
-    font-weight: 400;
-}
 /* Add this class to btn's that skew */
 .skewX{
     border-radius: 0px 50px 50px 0px;
     transform: skewX(-5deg);
 }
+/* start section [start your journey] */
+/* some style for div of list items and background images/ set display flex and add a margin top */
+.css-kup9ue{
+    display: flex;
+    margin-top: 65px;
+}
+.Start-Your-Journey{
+    background-color: var(--primary-color);
+}
+.Start-Your-Journey>.container{
+    display: flex;
+    flex-direction: column;
+}
+/* div of list items set display flex and add a width */
+.css-yqb7g3{
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+}
+/* a class for all of cards when they arent hover */
+.css-11437fw{
+    padding: 32px 32px 24px;
+    cursor: pointer;
+    transition: .3s;
+}
+/* select svg in all of cards and giv them opacity 0 */
+.css-11437fw svg{
+    opacity: 0;
+}
+/* all of cards when get hover will get these styles */
+.css-1ig0umz:hover{
+    padding: 32px 32px 24px;
+    cursor: pointer;
+    background-color: var(--background-color);/*dark lighter*/
+    box-shadow: 0px 16px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+/* select svg in all of cards when they hover ,they will get opacity 1 */
+.css-1ig0umz:hover svg{
+    opacity: 1;
+}
+/* select first card and hover it then will apear background image */
+.css-1ig0umz:nth-child(1):hover ~.btcex-1f7zayh{
+    background-image: url(images/home-register.2ebb9881.png);
+    background-size: 100% 100%;
+    background-position: center;
+    width: 480px;
+    height: 422px;
+    position: absolute;
+    top: 50;
+    right: 0;
+    translate: -70px -85px;
+}
+/* select second card and hover it then will apear background image */
+.css-1ig0umz:nth-of-type(3):hover ~.btcex-1pcoxd9{
+    background-image: url(images/home-deposit.f4459e94.png);
+    background-size: 100% 100%;
+    width: 480px;
+    height: 422px;
+    position: absolute;
+    top: 50;
+    right: 0;
+    translate: -70px -85px;
+}
+/* select third card and hover it then will apear background image */
+.css-1ig0umz:nth-of-type(5):hover ~.css-16jrh1l{
+    background-image: url(images/home-perpetual.a99749ed0a9a3cae358f.png);
+    background-size: 100% 100%;
+    width: 480px;
+    height: 422px;
+    position: absolute;
+    top: 50;
+    right: 0;
+    translate: -70px -85px;
+}
+/* end section [start your journey] */

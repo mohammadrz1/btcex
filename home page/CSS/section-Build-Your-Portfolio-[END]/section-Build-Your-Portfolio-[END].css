@@ -48,19 +48,30 @@
     margin: 0%;
     box-sizing: border-box;
     font-family:Harmony;
+    list-style: none;
 }
 /* GENERAL CSS [END] */
 /* add some styles to body*/
 body{
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     color: var(--white-text);
 }
 /* add some styles to container */
 .container{
-    display: flex;
-    justify-content: space-between;
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
+}
+/* btn news */
+.btn-news{
+    margin-left: 5px;
+    padding: 0 0 0 5px;
+    width: 30px;
+    height: 15px;
+    font-size: 9px;
+    border-radius: 3px;
+    color: var(--white-text) ;
+    background-color:var(--red-color) ;
 }
 /* text with font size 40px can get these styles*/
 .css-fo40{
@@ -84,22 +95,7 @@ body{
 }
 /* text with font size 16px can get these styles*/
 .css-fo16{
-    font-size: 16px;
-    font-weight: 600;
-}
- 
-.css-fo40{
-    font-size: 40px;
-    line-height: 47px;
-    font-weight: 700;
-}
-    /*we can use this class for numbers in chart*/
-
-.css-fop24{
-    color: var(--grey-color);
-    line-height: 36px;
-    font-size: 24px;
-    margin-top: 30px;
+    font-size: 16px; /*we can use this class for numbers in chart*/
 }
 /* Paragraph with font size 20px can get these properties*/
 .css-fop20{
@@ -134,3 +130,72 @@ body{
     border-radius: 0px 50px 50px 0px;
     transform: skewX(-5deg);
 }
+/* section Build Your Portfolio [START] */
+/* code of container [start] */
+#Build-Your-Portfolio{
+    width: 100%;
+    background-color: var(--background-color);
+}
+#Build-Your-Portfolio>.container{
+    padding: 50px 0 50px 0;
+}
+/* code of container [end] */
+/* code min of [start] */
+/* code of main container [start] */
+#Build-Your-Portfolio>.container{
+    display: flex;
+    flex-direction: column;
+}
+#main-s-Build-Your-Portfolio{
+    width: 100%;
+    border: 1px solid rgb(41, 42, 47);
+    border-radius: 10px;
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(2,30%) 40%;
+}
+/* code of main card  [start]*/
+#main-s-Build-Your-Portfolio>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding: 25px;
+    border-right: 1px solid rgb(41, 42, 47);
+    cursor: pointer;
+    height: 310px;
+}
+#main-s-Build-Your-Portfolio>div>img{
+    width: 110px;
+}
+#main-s-Build-Your-Portfolio>div:first-of-type>img,#main-s-Build-Your-Portfolio>div:nth-child(2)>img{
+    margin-top: 40px;
+}
+#main-s-Build-Your-Portfolio>div>p{
+    margin-top: 23px;
+}
+#main-s-Build-Your-Portfolio>div>div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#main-s-Build-Your-Portfolio>div>div:last-of-type{
+    margin-top: 23px;
+}
+#main-s-Build-Your-Portfolio>div:last-of-type>div:last-of-type>div{
+    display: flex;
+    flex-direction: column;
+}
+#main-s-Build-Your-Portfolio>div:last-of-type>div>div>div{
+    display: flex;
+}
+#main-s-Build-Your-Portfolio>div:last-of-type>div>div>div>p{
+    color: var(--green-color);
+}
+#main-s-Build-Your-Portfolio>div:last-of-type>div:last-of-type>img{
+    width: 110px;
+}
+/* code of main card  [start]*/
+/* code of main container [end] */
+/* code min of section Build Your Portfolio [end] */
+/* section Build Your Portfolio [END] */
