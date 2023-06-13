@@ -120,6 +120,9 @@ body{
     transform: skewX(-5deg);
 }
 /* section welcome to btcex [start] */
+.css-1dwg3de{
+    padding-top: 96px;
+}
 .css-1dwg3de p{
     max-width: 520px;
     margin-top: 22px;
@@ -132,6 +135,7 @@ body{
     position: absolute;
     top: 0px;
     right: -110px;
+    translate: 0px 50px;
     z-index: 0;
 }
 /* some style for form get start */
@@ -251,6 +255,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-top: 40px;
 }
 .btcex-15bnogv>span>img{
     width: 30px;
@@ -306,5 +311,19 @@ body{
     100% {
         transform: translateY(-200px);
     }
+}
+.more-link{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.more-link:first-of-type{
+    color: var(--white-text);
+    text-decoration: none;
+    padding-top: 2px;
+    font-size: 14px;
+}
+.more-link>span>svg{
+    width: 12px;
 }
 /* section welcome to btcex [end] */
