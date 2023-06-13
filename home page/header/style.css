@@ -53,7 +53,7 @@
 /* GENERAL CSS [END] */
 /* add some styles to body*/
 body{
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     color: var(--white-text);
 }
 /* add some styles to container */
@@ -65,7 +65,6 @@ body{
 .btn-news{
     margin-left: 5px;
     padding: 0 0 0 5px;
-    display: inline-block;
     width: 30px;
     height: 15px;
     font-size: 9px;
@@ -96,6 +95,7 @@ body{
 /* text with font size 16px can get these styles*/
 .css-fo16{
     font-size: 16px; /*we can use this class for numbers in chart*/
+    color: var(--white-text);
 }
 /* Paragraph with font size 20px can get these properties*/
 .css-fop20{
@@ -130,128 +130,134 @@ body{
     border-radius: 0px 50px 50px 0px;
     transform: skewX(-5deg);
 }
-/* header code [START]  */
-/* container (all) code [start] */
+/* start header */
 header{
-    width: 100%;
-    display: flex;
-    background-color:var(--background-color) ;
-    text-align: center;
-    margin: 0 auto;
-}
-/* container (all) code [end] */
-/* header-left [start] */
-/* container code [start] */
-#header-left{
-    display: flex;
-    float: left;
-    padding: 10px 24px 10px 24px;
-}
-/* container code [end] */
-/* logo [start]  */
-#logo{
-    display: flex;
-    align-items: flex-start;
-}
-#logo *{
-    text-align: left;
-    padding: 0;
-}
-/* logo img [start] */
-#logo>img{
-    width: 92px;
-}
-/* logo img [end] */
-/* logo list [start] */
-#logo>ul{
-    list-style: none;
-    display: flex;
+    background-color: var(--background-color);
     margin: 0;
 }
-#logo>ul>li{
+nav{
+    width: 100%;
+    height: 60px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
     position: relative;
 }
-#logo>ul>li>img{
-    margin-top: 3px;
-    height: 17px;
-    width: 34px;
+nav .logo{
+    width: 100px;
+    height: 20px;
 }
-#logo>ul>li>div{
+.lists{
     display: flex;
-    position: absolute;
-    top: 30px;
-    background-color: #1c1e22;
-    width: 800px;
-    display: none;
-    transition-delay: 4s ;
-    transition: all 5s;
-}
-#logo>ul:hover>li>div{
-    display: flex;
-}
-#logo>ul>li>div>ul{
-    list-style: none;
-    flex-direction: column;
-    padding: 26px 20px;
-}
-#logo>ul>li>div>ul>span{
-    font-family:Harmony;
-    font-weight: 500;
-}
-#logo>ul>li>div>ul>li{
-    margin-top: 20px;
-    width:100%;
-    display:flex;
     justify-content: space-between;
+    gap: 30px;
+}
+.lists>li>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    border-radius: 10px;
-    transition: all 0.2s;
+    background-color: rgb(28, 30, 34);
+    border-radius: 0px 0px 8px 8px;
+    padding: 12px 16px;
+    opacity: 0;
+    visibility: none;
+    display: none;
+    position: absolute;
+    width: 340px;
+    height: 200px;
+    top: 65px;
 }
-#logo>ul>li>div>ul>li>div{
-    display: flex;
-    justify-content: space-between;
-}
-#logo>ul>li>div>ul>li>div>svg{
-    margin-right:14px;
-}
-#logo>ul>li>div>ul>li>svg{
-   display: none;
-}
-#logo>ul>li>div>ul>li:hover>svg{
-    opacity: 70%;
+.lists>li:hover>ul{
+    opacity: 1;
     display: block;
+    visibility: visible;
 }
-#logo>ul>li>div>ul>li:hover{
-    background-color: rgb(51, 51, 51);
-    cursor: pointer;
+.lists-drop{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white-text);
+    text-decoration: none;
 }
-#logo>ul>li>div>ul>li p{
+.flash{
+    opacity: 0;
+}
+.flash:hover{
+    opacity: 1;
+}
+.link-nav:hover{
+    color: #3E7BF6;
+}
+
+/* header-rghit-[start] */
+#header-right{
+    float: right;
+    text-align: right;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-content: center;
+    margin-left: 240px;
+    margin-top: 12px;
+}
+#header-right>hr{
+    border: 1px solid var(--white-text);
     margin: 0;
+    height: 24px;
 }
-#logo>ul>li>div>ul>li>div>div{
-    width: 85.8%;
-}
-#logo>ul>li>div>ul>li>div>div>div{
+#sin-btns{
     display: flex;
 }
-/* logo list [end] */
-/* logo [end]  */
-/* list rghit [start] */
-#list-header-left-rghit{
-    margin: 0 0 0 40px;
+.btn-register{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 20px;
+    cursor: pointer;
+    padding:4px; ;
+    height: 30px;
+    width: 100px;
+    border: 1px solid var(--blue-color);
 }
-#list-header-left-rghit>li{
+.btn-register>h5{
+    color: var(--blue-color);
+    font-size: 14px;
+}
+.btn-register>img{
+    width: 20px ;
+    height: 20px;
+    margin-right: 10px;
+}
+#header-rghit-icon>ul{
+    display: flex;
+}
+#header-rghit-icon>ul>li{
+    cursor: pointer;
+    position: relative;
+    margin: 0 8px;
+}
+#header-rghit-icon>ul>li>img{
+    width: 20px;
+}
+#header-rghit-icon>ul>li>ul{
+    display: none;
+    background-color: var(--background-color);
+    position: absolute;
+    top: 40px;
+    left: 1px;
+    text-align: center;
+    width: 130px;
+    border-radius: 2px;
+}
+#header-rghit-icon>ul>li:hover>ul{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
 }
-#list-header-left-rghit>li>h4{
-    font-size: 14px;
-    color: var(--white-text);
-    cursor: pointer;
+#header-rghit-icon>ul>li:hover>ul img{
+    width: 70px;
 }
-/* list rghit [end] */
-/* header-left [end] */
+#login-register>h4{
+    font-size: 16px;
+    margin-top: 5px;
+}
+/* header-rghit-[end] */
