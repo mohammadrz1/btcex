@@ -1,0 +1,321 @@
+/* add font  [START]*/
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Thin.ttf);
+    font-weight: 100;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Light.ttf);
+    font-weight: 300;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Medium.ttf);
+    font-weight: 500;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Bold.ttf);
+    font-weight:700;
+}
+@font-face{
+    font-family:Harmony;
+    src: url(fonts/HarmonyOS_Sans_Black.ttf);
+    font-weight: 900;
+}
+/* add font  [END]*/
+/* GENERAL CSS [START] */
+/* make css varibles */
+:root{
+    --primary-color: #0C0E11;
+    --grey-color: #999999;/*grey*/
+    --white-text: #FFFFFF;/*white*/
+    --blue-color: #3E7BF6;/*blue*/
+    --green-color: #3FD194;/*green*/
+    --red-color: #F84960; /*red*/
+    --background-color: #17181E;
+    --help-btn: #2C79B7;
+}
+/* Remove margin and padding for all of items */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:Harmony;
+    list-style: none;
+}
+/* GENERAL CSS [END] */
+/* add some styles to body*/
+body{
+    background-color: var(--primary-color);
+    color: var(--white-text);
+}
+/* add some styles to container */
+.container{
+    width: 100%;
+    max-width: 1200px;
+}
+/* btn news */
+.btn-news{
+    margin-left: 5px;
+    padding: 0 0 0 5px;
+    width: 30px;
+    height: 15px;
+    font-size: 9px;
+    border-radius: 3px;
+    color: var(--white-text) ;
+    background-color:var(--red-color) ;
+}
+/* text with font size 40px can get these styles*/
+.css-fo40{
+    font-size: 40px;
+    font-weight: 700;
+}
+/* text with font size 24px can get these styles*/
+.css-fo24{
+    font-size: 24px;
+    font-weight: 700;
+}
+/* text with font size 20px can get these styles*/                        
+.css-fo20{
+    font-size: 20px;
+    font-weight: 500;
+}
+/* text with font size 18px can get these styles*/
+.css-fo18{
+    font-size: 18px;
+    font-weight: 700;
+}
+/* text with font size 16px can get these styles*/
+.css-fo16{
+    font-size: 16px; /*we can use this class for numbers in chart*/
+    color: var(--white-text);
+}
+/* Paragraph with font size 20px can get these properties*/
+.css-fop20{
+    color: var(--grey-color);
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+/* Paragraph with font size 18px can get these properties*/
+.css-fop18{
+    color: var(--grey-color);
+    font-size: 18px;
+}
+/* Paragraph with font size 16px can get these properties*/
+.css-fop16{
+    color: var(--grey-color);
+    font-size: 16px;
+}
+/* Paragraph with font size 14px can get these properties*/
+.css-fop14{
+    color: var(--grey-color);
+    font-size: 14px;
+}
+/* Paragraph with font size 12px can get these properties*/
+.css-fop12{
+    color: var(--grey-color);
+    font-size: 12px;
+    font-weight: 400;
+}
+/* Add this class to btn's that skew */
+.skewX{
+    border-radius: 8px 50px 50px 8px;
+    transform: skewX(-5deg);
+}
+/* header code's [start] */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+    background-color: var(--background-color);
+    width: 100%;
+    height: 65px;
+}
+/* header left of home page change display to flex */
+#header-left{
+    display: flex;
+    align-items: center;
+}
+/* style both btc icon and squar div change display to flex */
+.btc-logo{
+    display: flex;
+    align-items: center;
+}
+/* get width to btc logo */
+.btc-logo>a{
+    width: 95px;
+}
+/* some style to squar button and change display to flex*/
+.squar-btn{
+    display: flex;
+    align-items: center;
+}
+/* style to squar btn Except svg change display to flex  */
+.squar-blue{
+    width: 23px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-left: 16px;
+}
+/* some style to squar white */
+.white-tra{
+    translate: 0px -7px;
+    position: relative;
+}
+/* style to white child of squar blue div */
+.squar-blue .white-squar{
+    width: 8px;
+    height: 8px;
+    margin-left: 2px;
+    border-radius: 2px;
+    background-color: var(--white-text);
+}
+/* style to blue child of squar blue div */
+.rotate-squar{
+    rotate: -45deg;
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
+/* style to image of blue child in .rotate-squar div */
+.rotate-squar>img{
+    width: 9px;
+}
+/*add a margin left to svg */
+.squar-btn svg{
+    margin-left: 4px;
+}
+/* style to nav and change display to flex */
+nav{
+    display: flex;
+    align-items: center;
+}
+/* style to navbar ul menu */
+.nav-bar{
+    display: flex;
+    align-items: center;
+}
+/* style to navbar ul menu lists items change display to flex */
+.nav-bar>li{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 24px;
+    font-size: 14px;
+    font-weight: 500;
+}
+/* when hover on li in navbar ul level 1 can style these */
+.nav-bar>li:hover ul{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+/* style to ul level 2 */
+.nav-bar>li>ul{
+    background-color: rgb(28, 30, 34);
+    padding: 0;
+    width: max-content;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    display: block;
+    box-shadow: 0px 0px 20px rgba(18, 18, 18, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+}
+/* style to li level 2 */
+.nav-bar>li>ul>li{
+    display: block;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+/* when hover on li level 1 ,svg's can style these */
+.nav-bar>li:hover svg{
+    color: var(--blue-color);
+    fill: #3E7BF6;
+}
+/* title-bar new btn style */
+.title-bar svg{
+    margin-left: 45px;
+}
+.title-bar{
+    translate: 0px 5px;
+}
+/* li's that have new btn */
+.title-list{
+    margin-bottom: 18px;
+}
+/* add some style like color and remove text decoration of link in navbar */
+.nav-bar>li>p>a{
+    color: var(--white-text);
+    text-decoration: none;
+}
+/* style to right part of header */
+#header-right{
+    display: flex;
+    align-items: center;
+}
+/* add display flex to register header */
+.register-header{
+    display: flex;
+    align-items: center;
+}
+.register-header>p{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+/* register btn set display to flex */
+.header-btnr{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 23px;
+    color: var(--blue-color);
+    font-size: 14px;
+    font-weight: 600;
+    width: 105px;
+    height: 32px;
+    border: 1px solid #3E7BF6;
+    cursor: pointer;
+    border-radius: 8px 50px 50px 8px;
+}
+/* set margin and width to image of register btn */
+.header-btnr>img{
+    width: 24px;
+    margin: 0px 5px;
+}
+/* set display flex to icon's right of header */
+.icons-right{
+    display: flex;
+    align-items: center;
+    border-left: 1px solid gray;
+}
+/* some style to images of icons */
+.icons-right>div>img{
+    width: 16px;
+    margin: 0px 8px;
+    cursor: pointer;
+}
+/* first div of icons */
+.icons-right>div:nth-child(1){
+    margin-left: 20px;
+}
+/* header code's [end] */
