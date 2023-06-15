@@ -1,3 +1,35 @@
+/* add font  [START]*/
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Thin.ttf);
+    font-weight: 100;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Light.ttf);
+    font-weight: 300;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Medium.ttf);
+    font-weight: 500;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Bold.ttf);
+    font-weight:700;
+}
+@font-face{
+    font-family:Harmony;
+    src: url(fonts/HarmonyOS_Sans_Black.ttf);
+    font-weight: 900;
+}
+/* add font  [END]*/
 /* GENERAL CSS [START] */
 /* make css varibles */
 :root{
@@ -55,7 +87,10 @@ body{
     font-size: 16px;
     font-weight: 600;
 }
- 
+.css-fo20{
+    font-size: 20px;
+    font-weight: 700;
+}
 .css-fo40{
     font-size: 40px;
     line-height: 47px;
@@ -102,3 +137,104 @@ body{
     border-radius: 0px 50px 50px 0px;
     transform: skewX(-5deg);
 }
+/* section-1 [START] */
+#section-1{
+    width: 100%;
+}
+#section-1>.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+/* title all [start] */
+
+/* title all [end] */
+/* itm-card-section-1 [start] */
+#itm-cards-section-1{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+#itm-cards-section-1>div{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+}
+#itm-cards-section-1>div>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#itm-cards-section-1>div>div p{
+    font-size:12px ;
+    font-weight: 400;
+    color: var(--grey-color);
+}
+#itm-cards-section-1>div>div h5{
+    font-weight: 700;
+    font-size: 14px;
+}
+#itm-cards-section-1>div>div img{
+    width: 24px;
+    height: 24px;
+}
+#itm-cards-section-1>div>div span{
+    font-size: 14px;
+    font-weight: 400;
+}
+#itm-cards-section-1>div:nth-of-type(1)>div span,#itm-cards-section-1>div:nth-of-type(3)>div span{
+    color: var(--red-color);
+}
+#itm-cards-section-1>div:nth-of-type(2)>div span{
+    color: var(--green-color);
+}
+/* code of title itm card [start]*/
+#itm-cards-section-1>div>div>.title-s-1-body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    cursor: pointer;
+}
+#itm-cards-section-1>div>div>.title-s-1-body>p:nth-of-type(1){
+    margin-right: 12px;
+}
+#itm-cards-section-1>div>div>.title-s-1-body>p:nth-of-type(2){
+    margin-right: 110px;
+}
+#itm-cards-section-1>div>div>.title-s-1-body>p:nth-of-type(3){
+    margin-right: 60px;
+}
+/* code of title itm card [end]*/
+/* code of body itm card [start]*/
+.body-section-1{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.itm-card-section-1{
+    display: flex;
+    cursor: pointer;
+}
+.itm-card-section-1>div{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.itm-card-section-1>div:nth-of-type(1){
+    margin-right: 12px;
+}
+.itm-card-section-1>div:nth-of-type(2)>h5{
+    margin-left: 11px;
+}
+.itm-card-section-1>div:nth-of-type(2){
+    margin-right: 50px;
+}
+.itm-card-section-1>div:nth-of-type(3){
+    margin-right: 87px;
+}
+/* code of body itm card [end]*/
+/* itm-card-section-1 [end] */
+/* section-1 [END] */
