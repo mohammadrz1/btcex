@@ -96,6 +96,7 @@ body{
 .css-fo16{
     font-size: 16px; /*we can use this class for numbers in chart*/
     color: var(--white-text);
+    font-weight: 600;
 }
 /* Paragraph with font size 20px can get these properties*/
 .css-fop20{
@@ -139,6 +140,7 @@ header{
     background-color: var(--background-color);
     width: 100%;
     height: 65px;
+    position: fixed;
 }
 /* header left of home page change display to flex */
 #header-left{
@@ -224,10 +226,10 @@ nav{
 /* style to ul level 2 */
 .nav-bar>li>ul{
     background-color: rgb(28, 30, 34);
-    padding: 0;
+    padding: 10px 16px;
     width: max-content;
     position: absolute;
-    top: 65px;
+    top: 63px;
     left: 0px;
     display: block;
     box-shadow: 0px 0px 20px rgba(18, 18, 18, 0.25);
@@ -236,21 +238,68 @@ nav{
     transition-property: all;
     transition-duration: 0.3s;
     transition-delay: 0.1s;
+    border-radius: 0px 0px 8px 8px;
+}
+/* menu level 2 nthchild 2 3 4 */
+.menu-lev2:nth-child(2){
+    top: 45px;
 }
 /* style to li level 2 */
 .nav-bar>li>ul>li{
+    width: 300px;
     display: block;
     margin: 0;
+    margin-bottom: 5px;
     padding: 10px;
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* when li level 2 hover background color will change */
+.nav-bar>li>ul>li:hover{
+    background-color: rgb(41, 42, 47);
+}
+/* item left of li items */
+.item-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* flex-paragraph div style it and change display to flex */
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+/* svg of left item in li items */
+.item-left>svg{
+    margin-right: 12px;
+    fill: #232323;
+}
+.item-left>div>img{
+    width: 24px;
+    margin-left: 8px;
+}
+/* svg subset li in menu lev2 */
+.menu-lev2>li>svg{
+    width: 30px;
+    fill: #3E7BF6;
+    opacity: 0;
+    transition:all .3s;
+}
+/* svg subset li in menu lev2 on hover */
+.menu-lev2>li:hover svg:nth-child(2){
+    width: 15px;
+    fill: #3E7BF6;
+    opacity: 1;
 }
 /* when hover on li level 1 ,svg's can style these */
-.nav-bar>li:hover svg{
+/* .nav-bar>li>svg:hover{
     color: var(--blue-color);
     fill: #3E7BF6;
-}
+} */
 /* title-bar new btn style */
 .title-bar svg{
     margin-left: 45px;
