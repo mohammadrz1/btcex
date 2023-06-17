@@ -8,7 +8,633 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
+      <!-- header [start] -->
+      <header>
+        <!-- left part of header [start] -->
+        <div id="header-left">
+            <!-- btc icon and squar image [start] -->
+            <div class="btc-logo">
+                <!-- btcex logo -->
+                <a href="#">
+                    <img src="image/header/download (1).svg" alt="btc">
+                </a>
+                <!-- squar button [start] -->
+                <div class="squar-btn">
+                    <!-- squar blu means that logo near svg [start]-->
+                    <div class="squar-blue">
+                        <div class="white-squar"></div>
+                        <div class="rotate-squar">
+                            <img src="image/header/squarblue.svg" alt="">
+                        </div>
+                        <div class="white-squar white-tra"></div>
+                        <div class="white-squar white-tra"></div>
+                    </div>
+                    <!-- squar blu means that logo near svg [end]-->
+                    <!-- svg arrow bottom [start]-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        
+                        <path
+                            d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                    </svg>
+                    <!-- svg arrow bottom [end]-->
+                </div>
+                <!-- squar button [end] -->
+            </div>
+            <!-- btc icon and squar image [end]-->
+            <!-- nav [start] -->
+            <nav>
+                <!-- nav-bar [start] -->
+                <ul class="nav-bar">
+                    <!-- list items of nav-bar*7 [start] -->
+                    <li class="title-list">
+                        <!-- div of both new svg and item [start] -->
+                        <div class="title-bar">
+                            <div>
+                                <svg width="25" height="12" viewBox="0 0 25 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="25" height="12" rx="2" fill="#F84960"></rect>
+                                    <path
+                                        d="M8.81641 9H7.66406L4.86719 4.44141H4.83203C4.84245 4.59505 4.85156 4.75781 4.85938 4.92969C4.86979 5.10156 4.8776 5.27865 4.88281 5.46094C4.89062 5.64323 4.89714 5.82812 4.90234 6.01562V9H4.05078V3.28906H5.19531L7.98828 7.81641H8.01562C8.01042 7.68359 8.00391 7.53125 7.99609 7.35938C7.98828 7.1875 7.98047 7.01042 7.97266 6.82812C7.96745 6.64323 7.96354 6.46484 7.96094 6.29297V3.28906H8.81641V9ZM11.9453 4.59375C12.3307 4.59375 12.6615 4.67318 12.9375 4.83203C13.2135 4.99089 13.4258 5.21615 13.5742 5.50781C13.7227 5.79948 13.7969 6.14844 13.7969 6.55469V7.04688H10.9102C10.9206 7.46615 11.0326 7.78906 11.2461 8.01562C11.4622 8.24219 11.7643 8.35547 12.1523 8.35547C12.4284 8.35547 12.6758 8.32943 12.8945 8.27734C13.1159 8.22266 13.3438 8.14323 13.5781 8.03906V8.78516C13.362 8.88672 13.1419 8.96094 12.918 9.00781C12.694 9.05469 12.4258 9.07812 12.1133 9.07812C11.6888 9.07812 11.3151 8.99609 10.9922 8.83203C10.6719 8.66536 10.4206 8.41797 10.2383 8.08984C10.0586 7.76172 9.96875 7.35417 9.96875 6.86719C9.96875 6.38281 10.0508 5.97135 10.2148 5.63281C10.3789 5.29427 10.6094 5.03646 10.9062 4.85938C11.2031 4.68229 11.5495 4.59375 11.9453 4.59375ZM11.9453 5.28516C11.6562 5.28516 11.4219 5.37891 11.2422 5.56641C11.0651 5.75391 10.9609 6.02865 10.9297 6.39062H12.8984C12.8958 6.17448 12.8594 5.98307 12.7891 5.81641C12.7214 5.64974 12.6172 5.51953 12.4766 5.42578C12.3385 5.33203 12.1615 5.28516 11.9453 5.28516ZM18.3672 8.99609L17.8203 6.98438C17.7943 6.88542 17.763 6.76562 17.7266 6.625C17.6901 6.48438 17.6536 6.33984 17.6172 6.19141C17.5807 6.04036 17.5469 5.90104 17.5156 5.77344C17.487 5.64583 17.4648 5.54688 17.4492 5.47656H17.418C17.4049 5.54688 17.3841 5.64583 17.3555 5.77344C17.3268 5.90104 17.2943 6.04036 17.2578 6.19141C17.2214 6.34245 17.1849 6.48958 17.1484 6.63281C17.1146 6.77604 17.0833 6.89844 17.0547 7L16.4805 8.99609H15.4727L14.2617 4.67188H15.1914L15.7539 6.82031C15.7904 6.96615 15.8255 7.1237 15.8594 7.29297C15.8958 7.46224 15.9271 7.6237 15.9531 7.77734C15.9792 7.93099 15.9987 8.05729 16.0117 8.15625H16.043C16.0534 8.08594 16.0677 7.9974 16.0859 7.89062C16.1042 7.78125 16.125 7.66797 16.1484 7.55078C16.1719 7.43099 16.1953 7.31901 16.2188 7.21484C16.2422 7.10807 16.2643 7.02214 16.2852 6.95703L16.9492 4.67188H17.9531L18.5898 6.95703C18.6185 7.05599 18.6497 7.18099 18.6836 7.33203C18.7174 7.48047 18.7474 7.63021 18.7734 7.78125C18.8021 7.92969 18.8203 8.05339 18.8281 8.15234H18.8594C18.8698 8.0638 18.888 7.94401 18.9141 7.79297C18.9427 7.63932 18.9753 7.47656 19.0117 7.30469C19.0482 7.13021 19.0859 6.96875 19.125 6.82031L19.6992 4.67188H20.6133L19.3945 8.99609H18.3672Z"
+                                        fill="white"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- div of both new svg and item [end] -->
+                        <p>
+                            Buy Crypto
+                            <!-- set svg here [start] -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                               
+                                <path
+                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                            </svg>
+                            <!-- set svg here [end] -->
+                        </p>
+                        <!-- list items of dropdown [start] -->
+                        <ul class="menu-lev2">
+                            <!-- first list of dropdown level 1 [start]-->
+                            <li>
+                                <!-- left part of li [start] -->
+                                <div class="item-left">
+                                    <!-- svg icon [start] -->
+                                    <svg width="24px" height="24px" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+                                        <g clip-path="url(#clip0_7953_39488)">
+                                            <path d="M0.957031 15.3618H10.5222" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path
+                                                d="M8.3988 11.9565C10.1014 11.9565 10.5222 12.3774 10.5222 14.0609V17.9922C10.5222 19.6757 10.1014 20.0965 8.3988 20.0965H3.08048C1.37787 20.0965 0.957031 19.6757 0.957031 17.9922V14.0609C0.957031 12.3774 1.37787 11.9565 3.08048 11.9565H8.3988Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path
+                                                d="M20.0873 13.3914C20.0873 17.0931 17.0933 20.087 13.3916 20.087L14.3959 18.4131"
+                                                stroke="#3E7BF6" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path
+                                                d="M0.957031 7.65219C0.957031 3.95046 3.95094 0.956543 7.65268 0.956543L6.64835 2.63046"
+                                                stroke="#3E7BF6" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.7399 9.56524C14.3627 9.56524 12.4355 7.63812 12.4355 5.26089C12.4355 2.88367 14.3627 0.956543 16.7399 0.956543C19.1171 0.956543 21.0442 2.88367 21.0442 5.26089C21.0442 7.63812 19.1171 9.56524 16.7399 9.56524Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7953_39488">
+                                                <rect width="22" height="21.0435" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <!-- svg icon [end] -->
+                                    <!-- two line of paragraph [start] -->
+                                    <div class="flex-paragraph">
+                                        <span class="css-fo16">Credit Card</span>
+                                        <p class="css-fop12">Buy crypto via credit card</p>
+                                    </div>
+                                    <!-- two line of paragraph [end] -->
+                                </div>
+                                <!-- left part of li [end] -->
+                                <!-- right part of li [start] -->
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    
+                                    <path
+                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                </svg>
+                                <!-- right part of li [end] -->
+                            </li>
+                            <!-- first list of dropdown level 1 [end]-->
+                            <!-- second list of dropdown level 1 [start]-->
+                            <li>
+                                <!-- left part of li [start] -->
+                                <div class="item-left">
+                                    <!-- svg icon [start] -->
+                                    <svg width="24px" height="24px" viewBox="0 0 22 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+                                        <g clip-path="url(#clip0_7953_39449)">
+                                            <path d="M1 7.5H12" stroke="#3E7BF6" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M5 15.5H7" stroke="#3E7BF6" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M9.5 15.5H13.5" stroke="#3E7BF6" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path
+                                                d="M21 10.33V15.11C21 18.62 20.11 19.5 16.56 19.5H5.44C1.89 19.5 1 18.62 1 15.11V6.89001C1 3.38001 1.89 2.5 5.44 2.5H12.28"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path
+                                                d="M19.13 2.25C19.82 2.25 20.38 2.88 20.38 3.5C20.38 4.19 19.82 4.75 19.13 4.75H16V2.25H19.13Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path
+                                                d="M19.57 4.75C20.36 4.75 21 5.31 21 6C21 6.69 20.36 7.25 19.57 7.25H16V4.75H19.57Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M17.7598 7.25V8.5" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M17.7598 1V2.25" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M17.19 2.25H15" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M17.19 7.25H15" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7953_39449">
+                                                <rect width="22" height="21" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <!-- svg icon [end] -->
+                                    <!-- two line of paragraph [start] -->
+                                    <div class="flex-paragraph">
+                                        <span class="css-fo16">Bank Transfer</span>
+                                        <p class="css-fop12">Buy crypto via SEPA</p>
+                                    </div>
+                                    <!-- two line of paragraph [end] -->
+                                </div>
+                                <!-- left part of li [end] -->
+                                <!-- right part of li [start] -->
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    
+                                    <path
+                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                </svg>
+                                <!-- right part of li [end] -->
+                            </li>
+                            <!-- second list of dropdown level 1 [end]-->
+                            <!-- third list of dropdown level 1 [start]-->
+                            <li>
+                                <!-- left part of li [start] -->
+                                <div class="item-left">
+                                    <!-- svg icon [start] -->
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+                                        <g clip-path="url(#clip0_8473_29334)">
+                                            <path d="M3.19629 16.2319L16.2327 3.1955" stroke="#3E7BF6"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                            <path d="M11.0195 18.85L12.3286 17.5409" stroke="#3E7BF6" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M13.9561 15.915L16.5633 13.3077" stroke="#3E7BF6"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                            <path
+                                                d="M10.0813 2.8353C12.394 0.522568 13.5504 0.511659 15.8413 2.80257L21.1977 8.15893C23.4886 10.4498 23.4777 11.6062 21.1649 13.9189L13.9213 21.1626C11.6086 23.4753 10.4522 23.4862 8.1613 21.1953L2.80493 15.8389C0.514024 13.548 0.514024 12.4026 2.83766 10.0789L10.0813 2.8353Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M1.09082 22.9075H22.909" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_8473_29334">
+                                                <rect width="24" height="24" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <!-- svg icon [end] -->
+                                    <!-- two line of paragraph [start] -->
+                                    <div class="flex-paragraph">
+                                        <span class="css-fo16">Third-Party</span>
+                                        <p class="css-fop12">Buy Crypto via ACH</p>
+                                    </div>
+                                    <!-- two line of paragraph [end] -->
+                                </div>
+                                <!-- left part of li [end] -->
+                                <!-- right part of li [start] -->
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    
+                                    <path
+                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                </svg>
+                                <!-- right part of li [end] -->
+                            </li>
+                            <!-- third list of dropdown level 1 [end]-->
+                        </ul>
+                        <!-- list items of dropdown [end] -->
+                    </li>
+
+                    <li>
+                        <p>
+                            <a href="#">Markets</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Trade
+                            <!-- set svg here [start] -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                
+                                <path
+                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                            </svg>
+                            <!-- set svg here [end] -->
+                        </p>
+                        <!-- list items of dropdown [start] -->
+                        <ul class="menu-lev2">
+                            <!-- first list of dropdown level 1 [start]-->
+                            <li>
+                                <!-- left part of li [start] -->
+                                <div class="item-left">
+                                    <!-- svg icon [start] -->
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+                                        <g clip-path="url(#clip0_7946_38804)">
+                                            <path d="M17.4111 5.64014C19.593 7.1565 21.0984 9.56741 21.4039 12.3492"
+                                                stroke="#3E7BF6" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M2.7168 12.4037C3.00043 9.63276 4.48407 7.22185 6.64407 5.69458"
+                                                stroke="#3E7BF6" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path
+                                                d="M7.84375 21.7527C9.1092 22.3963 10.5492 22.7563 12.0656 22.7563C13.5274 22.7563 14.9019 22.429 16.1347 21.829"
+                                                stroke="#3E7BF6" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.0659 7.30911C10.391 7.30911 9.0332 5.95131 9.0332 4.27638C9.0332 2.60145 10.391 1.24365 12.0659 1.24365C13.7409 1.24365 15.0987 2.60145 15.0987 4.27638C15.0987 5.95131 13.7409 7.30911 12.0659 7.30911Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.17823 20.6402C2.50331 20.6402 1.14551 19.2824 1.14551 17.6074C1.14551 15.9325 2.50331 14.5747 4.17823 14.5747C5.85316 14.5747 7.21096 15.9325 7.21096 17.6074C7.21096 19.2824 5.85316 20.6402 4.17823 20.6402Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M19.8218 20.6402C18.1469 20.6402 16.7891 19.2824 16.7891 17.6074C16.7891 15.9325 18.1469 14.5747 19.8218 14.5747C21.4967 14.5747 22.8545 15.9325 22.8545 17.6074C22.8545 19.2824 21.4967 20.6402 19.8218 20.6402Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7946_38804">
+                                                <rect width="24" height="24" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <!-- svg icon [end] -->
+                                    <!-- two line of paragraph [start] -->
+                                    <div class="flex-paragraph">
+                                        <span class="css-fo16">Spot</span>
+                                        <p class="css-fop12">Easy & Fast Token-to-Token Trading</p>
+                                    </div>
+                                    <!-- two line of paragraph [end] -->
+                                </div>
+                                <!-- left part of li [end] -->
+                                <!-- right part of li [start] -->
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    
+                                    <path
+                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                </svg>
+                                <!-- right part of li [end] -->
+                            </li>
+                            <!-- first list of dropdown level 1 [end]-->
+                            <!-- second list of dropdown level 1 [start]-->
+                            <li>
+                                <!-- left part of li [start] -->
+                                <div class="item-left">
+                                    <!-- svg icon [start] -->
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+                                        <g clip-path="url(#clip0_7946_38781)">
+                                            <path d="M12 4.97461H22.9091" stroke="currentColor" stroke-width="1.3"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path
+                                                d="M20.4873 1.09106C22.4291 1.09106 22.9091 1.57107 22.9091 3.49107V7.9747C22.9091 9.8947 22.4291 10.3747 20.4873 10.3747H14.4218C12.48 10.3747 12 9.8947 12 7.9747V3.49107C12 1.57107 12.48 1.09106 14.4218 1.09106H20.4873Z"
+                                                stroke="currentColor" stroke-width="1.3" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M1.09082 17.5203H11.9999" stroke="currentColor" stroke-width="1.3"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path
+                                                d="M9.57809 13.6365C11.5199 13.6365 11.9999 14.1165 11.9999 16.0365V20.5201C11.9999 22.4401 11.5199 22.9201 9.57809 22.9201H3.51264C1.57082 22.9201 1.09082 22.4401 1.09082 20.5201V16.0365C1.09082 14.1165 1.57082 13.6365 3.51264 13.6365H9.57809Z"
+                                                stroke="currentColor" stroke-width="1.3" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path
+                                                d="M22.9088 15.2729C22.9088 19.4948 19.4943 22.9093 15.2725 22.9093L16.4179 21.0002"
+                                                stroke="#3E7BF6" stroke-width="1.3" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path
+                                                d="M1.09082 8.72743C1.09082 4.50561 4.50537 1.09106 8.72718 1.09106L7.58174 3.00016"
+                                                stroke="#3E7BF6" stroke-width="1.3" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7946_38781">
+                                                <rect width="24" height="24" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <!-- svg icon [end] -->
+                                    <!-- two line of paragraph [start] -->
+                                    <div class="flex-paragraph">
+                                        <span class="css-fo16">Convert</span>
+                                        <p class="css-fop12">No Charge, Fast Exchange</p>
+                                    </div>
+                                    <!-- two line of paragraph [end] -->
+                                </div>
+                                <!-- left part of li [end] -->
+                                <!-- right part of li [start] -->
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                   
+                                    <path
+                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                </svg>
+                                <!-- right part of li [end] -->
+                            </li>
+                            <!-- second list of dropdown level 1 [end]-->
+                        </ul>
+                        <!-- list items of dropdown [end] -->
+                    </li>
+                    <li>
+                        <p>
+                            <a href="#">Perpetual</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Copy Trade
+                            <!-- set svg here [start] -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                
+                                <path
+                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                            </svg>
+                            <!-- set svg here [end] -->
+                        </p>
+                        <!-- list items of dropdown [start] -->
+                        <ul class="menu-lev2">
+                            <!-- first list of dropdown level 1 [start]-->
+                            <li>
+                                <!-- left part of li [start] -->
+                                <div class="item-left">
+                                    <!-- svg icon [start] -->
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+                                        <g clip-path="url(#clip0_7946_38692)">
+                                            <path
+                                                d="M20.1052 5.20358C20.9343 5.65085 20.9343 6.92721 20.1052 7.37449L13.0034 11.2036C12.3706 11.5418 11.6288 11.5418 10.9961 11.2036L3.89428 7.37449C3.06519 6.92721 3.06519 5.65085 3.89428 5.20358L10.9961 1.37449C11.6288 1.0363 12.3706 1.0363 13.0034 1.37449L20.1052 5.20358Z"
+                                                stroke="#3E7BF6" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path
+                                                d="M9.44718 13.2656C10.2654 13.6802 10.789 14.5202 10.789 15.4365V21.6765C10.789 22.582 9.83991 23.1602 9.03264 22.7565L2.43264 19.4511C1.61446 19.0365 1.09082 18.1965 1.09082 17.2802V11.0402C1.09082 10.1347 2.03991 9.55653 2.84718 9.96017L9.44718 13.2656Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path
+                                                d="M14.5528 13.2656C13.7346 13.6802 13.2109 14.5202 13.2109 15.4365V21.6765C13.2109 22.582 14.16 23.1602 14.9673 22.7565L21.5673 19.4511C22.3855 19.0365 22.9091 18.1965 22.9091 17.2802V11.0402C22.9091 10.1347 21.96 9.55653 21.1528 9.96017L14.5528 13.2656Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7946_38692">
+                                                <rect width="24" height="24" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <!-- svg icon [end] -->
+                                    <!-- two line of paragraph [start] -->
+                                    <div class="flex-paragraph">
+                                        <span class="css-fo16">Portfolio Center</span>
+                                    </div>
+                                    <!-- two line of paragraph [end] -->
+                                </div>
+                                <!-- left part of li [end] -->
+                                <!-- right part of li [start] -->
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    
+                                    <path
+                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                </svg>
+                                <!-- right part of li [end] -->
+                            </li>
+                            <!-- first list of dropdown level 1 [end]-->
+                            <!-- second list of dropdown level 1 [start]-->
+                            <li>
+                                <!-- left part of li [start] -->
+                                <div class="item-left">
+                                    <!-- svg icon [start] -->
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+                                        <g clip-path="url(#clip0_7946_38668)">
+                                            <path
+                                                d="M15.2726 22.9092C20.7272 22.9092 22.909 20.7274 22.909 15.2729V8.72743C22.909 3.27288 20.7272 1.09106 15.2726 1.09106H8.72718C3.27264 1.09106 1.09082 3.27288 1.09082 8.72743V15.2729C1.09082 20.7274 3.27264 22.9092 8.72718 22.9092H15.2726Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M17.6181 13.9856L14.3018 17.302" stroke="#3E7BF6"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                            <path d="M6.38184 13.9856H17.6182" stroke="#3E7BF6" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M6.38184 10.0146L9.6982 6.69824" stroke="#3E7BF6"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                            <path d="M17.6182 10.0146H6.38184" stroke="#3E7BF6" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7946_38668">
+                                                <rect width="24" height="24" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <!-- svg icon [end] -->
+                                    <!-- two line of paragraph [start] -->
+                                    <div class="flex-paragraph">
+                                        <span class="css-fo16">Trade</span>
+                                    </div>
+                                    <!-- two line of paragraph [end] -->
+                                </div>
+                                <!-- left part of li [end] -->
+                                <!-- right part of li [start] -->
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    
+                                    <path
+                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                </svg>
+                                <!-- right part of li [end] -->
+                            </li>
+                            <!-- second list of dropdown level 1 [end]-->
+                            <!-- third list of dropdown level 1 [start]-->
+                            <li>
+                                <!-- left part of li [start] -->
+                                <div class="item-left">
+                                    <!-- svg icon [start] -->
+                                    <svg width="24px" height="24px" viewBox="0 0 24 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+                                        <g clip-path="url(#clip0_7946_38681)">
+                                            <path
+                                                d="M11.9999 20.5895H6.54537C3.27264 20.5895 1.09082 18.9201 1.09082 15.0248V7.23417C1.09082 3.33886 3.27264 1.66943 6.54537 1.66943H17.4545C20.7272 1.66943 22.909 3.33886 22.909 7.23417V10.573"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path
+                                                d="M17.455 7.79077L14.0404 10.5731C12.9168 11.4858 11.0732 11.4858 9.94953 10.5731L6.5459 7.79077"
+                                                stroke="#3E7BF6" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path
+                                                d="M16.0035 18.1523C15.8508 18.3081 15.7089 18.5975 15.6762 18.8089L15.4689 20.3114C15.3926 20.8567 15.7635 21.2352 16.298 21.1573L17.7708 20.9458C17.9781 20.9124 18.2726 20.7677 18.4144 20.6119L22.2762 16.6721C22.9417 15.9932 23.2581 15.203 22.2762 14.2013C21.3053 13.2108 20.5308 13.5335 19.8653 14.2124L16.0035 18.1523Z"
+                                                stroke="#3E7BF6" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M19.3086 14.78C19.6359 15.982 20.5522 16.9169 21.7304 17.2508"
+                                                stroke="#3E7BF6" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7946_38681">
+                                                <rect width="24" height="22.259" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <!-- svg icon [end] -->
+                                    <!-- two line of paragraph [start] -->
+                                    <div class="flex-paragraph">
+                                        <span class="css-fo16">Be a Lead Trader</span>
+                                    </div>
+                                    <!-- two line of paragraph [end] -->
+                                </div>
+                                <!-- left part of li [end] -->
+                                <!-- right part of li [start] -->
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    
+                                    <path
+                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                </svg>
+                                <!-- right part of li [end] -->
+                            </li>
+                            <!-- third list of dropdown level 1 [end]-->
+                        </ul>
+                        <!-- list items of dropdown [end] -->
+                    </li>
+                    <li class="title-list">
+                        <!-- div of new svg and item [start] -->
+                        <div class="title-bar">
+                            <div>
+                                <svg width="25" height="12" viewBox="0 0 25 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="25" height="12" rx="2" fill="#F84960"></rect>
+                                    <path
+                                        d="M8.81641 9H7.66406L4.86719 4.44141H4.83203C4.84245 4.59505 4.85156 4.75781 4.85938 4.92969C4.86979 5.10156 4.8776 5.27865 4.88281 5.46094C4.89062 5.64323 4.89714 5.82812 4.90234 6.01562V9H4.05078V3.28906H5.19531L7.98828 7.81641H8.01562C8.01042 7.68359 8.00391 7.53125 7.99609 7.35938C7.98828 7.1875 7.98047 7.01042 7.97266 6.82812C7.96745 6.64323 7.96354 6.46484 7.96094 6.29297V3.28906H8.81641V9ZM11.9453 4.59375C12.3307 4.59375 12.6615 4.67318 12.9375 4.83203C13.2135 4.99089 13.4258 5.21615 13.5742 5.50781C13.7227 5.79948 13.7969 6.14844 13.7969 6.55469V7.04688H10.9102C10.9206 7.46615 11.0326 7.78906 11.2461 8.01562C11.4622 8.24219 11.7643 8.35547 12.1523 8.35547C12.4284 8.35547 12.6758 8.32943 12.8945 8.27734C13.1159 8.22266 13.3438 8.14323 13.5781 8.03906V8.78516C13.362 8.88672 13.1419 8.96094 12.918 9.00781C12.694 9.05469 12.4258 9.07812 12.1133 9.07812C11.6888 9.07812 11.3151 8.99609 10.9922 8.83203C10.6719 8.66536 10.4206 8.41797 10.2383 8.08984C10.0586 7.76172 9.96875 7.35417 9.96875 6.86719C9.96875 6.38281 10.0508 5.97135 10.2148 5.63281C10.3789 5.29427 10.6094 5.03646 10.9062 4.85938C11.2031 4.68229 11.5495 4.59375 11.9453 4.59375ZM11.9453 5.28516C11.6562 5.28516 11.4219 5.37891 11.2422 5.56641C11.0651 5.75391 10.9609 6.02865 10.9297 6.39062H12.8984C12.8958 6.17448 12.8594 5.98307 12.7891 5.81641C12.7214 5.64974 12.6172 5.51953 12.4766 5.42578C12.3385 5.33203 12.1615 5.28516 11.9453 5.28516ZM18.3672 8.99609L17.8203 6.98438C17.7943 6.88542 17.763 6.76562 17.7266 6.625C17.6901 6.48438 17.6536 6.33984 17.6172 6.19141C17.5807 6.04036 17.5469 5.90104 17.5156 5.77344C17.487 5.64583 17.4648 5.54688 17.4492 5.47656H17.418C17.4049 5.54688 17.3841 5.64583 17.3555 5.77344C17.3268 5.90104 17.2943 6.04036 17.2578 6.19141C17.2214 6.34245 17.1849 6.48958 17.1484 6.63281C17.1146 6.77604 17.0833 6.89844 17.0547 7L16.4805 8.99609H15.4727L14.2617 4.67188H15.1914L15.7539 6.82031C15.7904 6.96615 15.8255 7.1237 15.8594 7.29297C15.8958 7.46224 15.9271 7.6237 15.9531 7.77734C15.9792 7.93099 15.9987 8.05729 16.0117 8.15625H16.043C16.0534 8.08594 16.0677 7.9974 16.0859 7.89062C16.1042 7.78125 16.125 7.66797 16.1484 7.55078C16.1719 7.43099 16.1953 7.31901 16.2188 7.21484C16.2422 7.10807 16.2643 7.02214 16.2852 6.95703L16.9492 4.67188H17.9531L18.5898 6.95703C18.6185 7.05599 18.6497 7.18099 18.6836 7.33203C18.7174 7.48047 18.7474 7.63021 18.7734 7.78125C18.8021 7.92969 18.8203 8.05339 18.8281 8.15234H18.8594C18.8698 8.0638 18.888 7.94401 18.9141 7.79297C18.9427 7.63932 18.9753 7.47656 19.0117 7.30469C19.0482 7.13021 19.0859 6.96875 19.125 6.82031L19.6992 4.67188H20.6133L19.3945 8.99609H18.3672Z"
+                                        fill="white"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- div of new svg and item [end] -->
+                        <p>
+                            <a href="#">Sweet Drop</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Promotions
+                            <!-- set svg here [start] -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                
+                                <path
+                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+                            </svg>
+                            <!-- set svg here [end] -->
+                        </p>
+                        <!-- list items of dropdown [start] -->
+                        <ul class="menu-lev2">
+                            <!-- first list of dropdown level 1 [start]-->
+                            <li>
+                                <!-- left part of li [start] -->
+                                <div class="item-left">
+                                    <!-- svg icon [start] -->
+                                    <!-- two line of paragraph [start] -->
+                                    <div class="flex-div">
+                                        <span class="css-fo16">BTCEX Perpetual Tournament</span>
+                                        <img src="image/header/fireworks.501de9bd.png" alt="">
+                                    </div>
+                                    <!-- two line of paragraph [end] -->
+                                </div>
+                                <!-- left part of li [end] -->
+                            </li>
+                            <!-- first list of dropdown level 1 [end]-->
+                            <!-- second list of dropdown level 1 [start]-->
+                            <li>
+                                <!-- left part of li [start] -->
+                                <div class="item-left">
+                                    <!-- two line of paragraph [start] -->
+                                    <div class="flex-div">
+                                        <span class="css-fo16">The 2nd Summertime Special</span>
+                                        <img src="image/header/hot-fire.aa726e41.png" alt="">
+                                    </div>
+                                    <!-- two line of paragraph [end] -->
+                                </div>
+                                <!-- left part of li [end] -->
+                            </li>
+                            <!-- second list of dropdown level 1 [end]-->
+                        </ul>
+                        <!-- list items of dropdown [end] -->
+                    </li>
+                    <!-- list items of nav-bar*7 [end] -->
+                </ul>
+                <!-- nav-bar [end] -->
+            </nav>
+            <!-- nav [end] -->
+        </div>
+        <!-- left part of header [end] -->
+        <!-- right part of header [start] -->
+        <div id="header-right">
+            <!-- form register part [start] -->
+            <div class="register-header">
+                <p>Log In</p>
+                <!-- header register btn-right[start] -->
+                <div class="header-btnr skewX">
+                    <img src="image/header/register-icon.png" alt="">
+                    <span>Register</span>
+                </div>
+                <!-- header register btn-right[end] -->
+            </div>
+            <!-- form register part [end] -->
+            <!-- icons right header[start] -->
+            <div class="icons-right">
+                <!-- div's of icons[start] -->
+                <div>
+                    <img src="image/header/down-arrow.png" alt="">
+                </div>
+                <div>
+                    <img src="image/header/network.png" alt="">
+                </div>
+                <div>
+                    <img src="image/header/sun.png" alt="">
+                </div>
+                <!-- div's of icons[end] -->
+            </div>
+            <!-- icons right header[end] -->
+        </div>
+        <!-- right part of header [end] -->
+    </header>
+    <!-- header [end] -->
     <main>
        <section id="section-1">
         <div class="container">

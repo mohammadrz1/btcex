@@ -141,6 +141,7 @@ body{
 /* section-1 [START] */
 #section-1,#section-2{
     width: 100%;
+    margin-top: 100px;
 }
 #section-1 img{
     height: 350px;
@@ -296,3 +297,239 @@ footer>.countainer{
     margin-bottom: 17px;
 }
 /* footer [END] */
+/* header code's [start] */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+    background-color: var(--background-color);
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    top: 0;
+}
+/* header left of home page change display to flex */
+#header-left{
+    display: flex;
+    align-items: center;
+}
+/* style both btc icon and squar div change display to flex */
+.btc-logo{
+    display: flex;
+    align-items: center;
+}
+/* get width to btc logo */
+.btc-logo>a{
+    width: 95px;
+}
+/* some style to squar button and change display to flex*/
+.squar-btn{
+    display: flex;
+    align-items: center;
+}
+/* style to squar btn Except svg change display to flex  */
+.squar-blue{
+    width: 23px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-left: 16px;
+}
+/* some style to squar white */
+.white-tra{
+    translate: 0px -7px;
+    position: relative;
+}
+/* style to white child of squar blue div */
+.squar-blue .white-squar{
+    width: 8px;
+    height: 8px;
+    margin-left: 2px;
+    border-radius: 2px;
+    background-color: var(--black-text);
+}
+/* style to blue child of squar blue div */
+.rotate-squar{
+    rotate: -45deg;
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
+/* style to image of blue child in .rotate-squar div */
+.rotate-squar>img{
+    width: 9px;
+}
+/*add a margin left to svg */
+.squar-btn svg{
+    margin-left: 4px;
+}
+/* style to nav and change display to flex */
+nav{
+    display: flex;
+    align-items: center;
+}
+/* style to navbar ul menu */
+.nav-bar{
+    display: flex;
+    align-items: center;
+}
+/* style to navbar ul menu lists items change display to flex */
+.nav-bar>li{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 24px;
+    font-size: 14px;
+    font-weight: 500;
+}
+/* when hover on li in navbar ul level 1 can style these */
+.nav-bar>li:hover ul{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+/* style to ul level 2 */
+.nav-bar>li>ul{
+    background-color: var(--background-color);
+    padding: 10px 16px;
+    width: max-content;
+    position: absolute;
+    top: 63px;
+    left: 0px;
+    display: block;
+    box-shadow: 0px 0px 20px rgba(18, 18, 18, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    border-radius: 0px 0px 8px 8px;
+}
+/* menu level 2 nthchild 2 3 4 */
+.menu-lev2:nth-child(2){
+    top: 45px;
+}
+/* style to li level 2 */
+.nav-bar>li>ul>li{
+    width: 300px;
+    display: block;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* when li level 2 hover background color will change */
+
+/* item left of li items */
+.item-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* flex-paragraph div style it and change display to flex */
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+/* svg of left item in li items */
+.item-left>svg{
+    margin-right: 12px;
+    fill: #232323;
+}
+.item-left>div>img{
+    width: 24px;
+    margin-left: 8px;
+}
+/* svg subset li in menu lev2 */
+.menu-lev2>li>svg{
+    width: 30px;
+    fill: #3E7BF6;
+    opacity: 0;
+    transition:all .3s;
+}
+/* svg subset li in menu lev2 on hover */
+.menu-lev2>li:hover svg:nth-child(2){
+    width: 15px;
+    fill: #3E7BF6;
+    opacity: 1;
+}
+/* when hover on li level 1 ,svg's can style these */
+/* .nav-bar>li>svg:hover{
+    color: var(--blue-color);
+    fill: #3E7BF6;
+} */
+/* title-bar new btn style */
+.title-bar svg{
+    margin-left: 45px;
+}
+.title-bar{
+    translate: 0px 5px;
+}
+/* li's that have new btn */
+.title-list{
+    margin-bottom: 18px;
+}
+/* add some style like color and remove text decoration of link in navbar */
+.nav-bar>li>p>a{
+    color: var(--white-text);
+    text-decoration: none;
+}
+/* style to right part of header */
+#header-right{
+    display: flex;
+    align-items: center;
+}
+/* add display flex to register header */
+.register-header{
+    display: flex;
+    align-items: center;
+}
+.register-header>p{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+/* register btn set display to flex */
+.header-btnr{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 23px;
+    color: var(--blue-color);
+    font-size: 14px;
+    font-weight: 600;
+    width: 105px;
+    height: 32px;
+    border: 1px solid #3E7BF6;
+    cursor: pointer;
+    border-radius: 8px 50px 50px 8px;
+}
+/* set margin and width to image of register btn */
+.header-btnr>img{
+    width: 24px;
+    margin: 0px 5px;
+}
+/* set display flex to icon's right of header */
+.icons-right{
+    display: flex;
+    align-items: center;
+    border-left: 1px solid gray;
+}
+/* some style to images of icons */
+.icons-right>div>img{
+    width: 16px;
+    margin: 0px 8px;
+    cursor: pointer;
+}
+/* first div of icons */
+.icons-right>div:nth-child(1){
+    margin-left: 20px;
+}
+/* header code's [end] */
