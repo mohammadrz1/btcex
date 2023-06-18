@@ -1,0 +1,312 @@
+/* add font  [START]*/
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Thin.ttf);
+    font-weight: 100;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Light.ttf);
+    font-weight: 300;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Medium.ttf);
+    font-weight: 500;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Bold.ttf);
+    font-weight:700;
+}
+@font-face{
+    font-family:Harmony;
+    src: url(fonts/HarmonyOS_Sans_Black.ttf);
+    font-weight: 900;
+}
+/* add font  [END]*/
+/* GENERAL CSS [START] */
+/* make css varibles */
+:root{
+    --primary-color: #0C0E11;
+    --grey-color: #999999;/*grey*/
+    --white-text: #FFFFFF;/*white*/
+    --blue-color: #3E7BF6;/*blue*/
+    --green-color: #3FD194;/*green*/
+    --red-color: #F84960; /*red*/
+    --background-color: #17181E;
+    --help-btn: #2C79B7;
+    --black-text: #2F2F2F;
+    --grey-light-mode: #666;
+}
+/* Remove margin and padding for all of items */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:Harmony;
+}
+/* GENERAL CSS [END] */
+/* add some styles to body*/
+body{
+    color: var(--black-text) 
+}
+/* add some styles to container */
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+/* text with font size 40px can get these styles*/
+.css-fo40{
+    font-size: 40px;
+    font-weight: 700;
+}
+/* text with font size 24px can get these styles*/
+.css-fo24{
+    font-size: 24px;
+    font-weight: 700;
+}
+/* text with font size 20px can get these styles*/                        
+.css-fo20{
+    font-size: 20px;
+    font-weight: 500;
+}
+/* text with font size 18px can get these styles*/
+.css-fo18{
+    font-size: 18px;
+    font-weight: 700;
+}
+/* text with font size 16px can get these styles*/
+.css-fo16{
+    font-size: 16px;
+    font-weight: 600;
+}
+ 
+.css-fo40{
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: 700;
+}
+/*we can use this class for numbers in chart*/
+
+.css-fop24{
+    color: var(--grey-color);
+    line-height: 36px;
+    font-size: 24px;
+    margin-top: 30px;
+}
+/* Paragraph with font size 20px can get these properties*/
+.css-fop20{
+    color: var(--grey-color);
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+/* Paragraph with font size 18px can get these properties*/
+.css-fop18{
+    color: var(--grey-color);
+    font-size: 18px;
+}
+/* Paragraph with font size 16px can get these properties*/
+.css-fop16{
+    color: var(--grey-color);
+    font-size: 16px;
+}
+/* Paragraph with font size 14px can get these properties*/
+.css-fop14{
+    color: var(--grey-color);
+    font-size: 14px;
+}
+/* Paragraph with font size 12px can get these properties*/
+.css-fop12{
+    color: var(--grey-color);
+    font-size: 12px;
+    font-weight: 400;
+}
+/* Add this class to btn's that skew */
+.skewX{
+    border-radius: 0px 50px 50px 0px;
+    transform: skewX(-5deg);
+}
+/* section 2 of market [start] */
+.market-per{
+    padding-top: 40px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* top part of section change display to flex */
+.top-per{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* set display flex to container */
+.direction-market{
+    flex-direction: column;
+}
+/* style to left links of top part */
+.links-left-per{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(102, 102, 102);
+}
+/*  */
+.links-left-per>div{
+    margin-right: 24px;
+    position: relative;
+}
+/*  */
+.links-left-per>div:nth-child(3){
+    margin-top: 10px;
+    border-bottom: 3px solid #3e7bf6;
+    padding-bottom: 10px;
+}
+/* style to right part of top part of section 2  */
+.search-box-per{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 3px;
+    height: 40px;
+}
+/* style to magnifire fill and width */
+.search-box-per>svg{
+    width: 40px;
+    fill: rgb(97, 97, 97);
+}
+/* style to input per div and add a border left */
+.search-box-per .input-per{
+    border-left: 1px solid rgb(189, 189, 189);
+}
+/* style to input of top part */
+.search-box-per input{
+    outline: none;
+    width: 180px;
+    height: 16px;
+    color: var(--primary-color);
+    padding: 5px 10px;
+    z-index: 1;
+    position: relative;
+    border: 0;
+    background: none;
+    opacity: .7;
+}
+/* change display to flex main part */
+.main-per{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* change display to flex and add some style  */
+.markets-symbol-per{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(222, 222, 222, 0.493);
+    font-size: 15px;
+    color: var(--grey-light-mode);
+    padding: 12px 16px;
+}
+/* change display to flex and add some style to content part  */
+.content-main-per{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(222, 222, 222, 0.607);
+    cursor: pointer;
+    padding: 12px 16px;
+    transition: all .3s;
+}
+/* select child 5 of list items */
+.content-main-per .child-per:nth-of-type(5){
+    display: flex;
+    justify-content: flex-end;
+}
+/* select child 3 of list items */
+.content-main-per .child-per:nth-of-type(3){
+    padding-left: 30px;
+}
+/* when hover lists will get this background color */
+.content-main-per:hover{
+    background-color: rgb(244, 244, 244);
+}
+/*  */
+.child-per>img{
+    width: 32px;
+    height: 32px;
+    margin-left: 9px;
+}
+/* select span of child par div and add some style to it  */
+.child-per>span{
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+/* select p of child par div and add some style to it */
+.child-per>p{
+    margin: 0;
+}
+/* add a width to child part */
+.child-per{
+    width: 225px;
+}
+/* change display to flex of child par first child */
+.child-per:nth-of-type(1){
+    display: flex;
+    align-items: center;
+}
+/* change display to flex of child par third child */
+.child-per:nth-of-type(3){
+    color: var(--green-color);
+    margin-left: 10px;
+}
+/* change display to flex of child par forth child */
+.child-per:nth-of-type(4){
+    text-align: center;
+}
+/* add border bottom */
+.content-main-per:nth-child(16){
+    border-bottom: 1px solid rgba(222, 222, 222, 0.607);
+}
+/* add some style to bottom part of main part of section 2 */
+.bottom-per{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 600;
+}
+/* select div of bottom part of section 2 */
+.bottom-per>div{
+    /* margin: 0px 13px; */
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+/* select first child of bottom part of section 2 */
+.bottom-per>div:nth-of-type(1){
+    border: 1px solid #3e7bf6;
+    color: #3e7bf6;
+}
+/* section 2 of market [end] */
