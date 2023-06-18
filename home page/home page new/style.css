@@ -1,0 +1,32 @@
+/* add font  [START]*/
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Thin.ttf);
+    font-weight: 100;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Light.ttf);
+    font-weight: 300;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Medium.ttf);
+    font-weight: 500;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Bold.ttf);
+    font-weight:700;
+}
+@font-face{
+    font-family:Harmony;
+    src: url(fonts/HarmonyOS_Sans_Black.ttf);
+    font-weight: 900;
+}
+/* add font  [END]*/
