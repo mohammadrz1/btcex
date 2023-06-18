@@ -151,7 +151,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding-bottom: 24px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 /* set display flex to container */
@@ -262,6 +262,8 @@ body{
 /*  */
 .child-per>span{
     margin-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
 }
 /*  */
 .child-per>p{
@@ -270,6 +272,11 @@ body{
 /*  */
 .child-per{
     width: 225px;
+}
+/*  */
+.child-per:nth-of-type(1){
+    display: flex;
+    align-items: center;
 }
 /*  */
 .child-per:nth-of-type(3){
