@@ -95,7 +95,7 @@ body{
     line-height: 47px;
     font-weight: 700;
 }
-    /*we can use this class for numbers in chart*/
+/*we can use this class for numbers in chart*/
 
 .css-fop24{
     color: var(--grey-color);
@@ -186,20 +186,16 @@ body{
     border-radius: 3px;
     height: 40px;
 }
-/*  */
-.search-box-per:focus{
-    border: 1px solid blue;
-}
-/*  */
+/* style to magnifire fill and width */
 .search-box-per>svg{
     width: 40px;
     fill: rgb(97, 97, 97);
 }
-/*  */
+/* style to input per div and add a border left */
 .search-box-per .input-per{
     border-left: 1px solid rgb(189, 189, 189);
 }
-/*  */
+/* style to input of top part */
 .search-box-per input{
     outline: none;
     width: 180px;
@@ -212,14 +208,14 @@ body{
     background: none;
     opacity: .7;
 }
-/*  */
+/* change display to flex main part */
 .main-per{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-/*  */
+/* change display to flex and add some style  */
 .markets-symbol-per{
     display: flex;
     width: 100%;
@@ -230,7 +226,7 @@ body{
     color: var(--grey-light-mode);
     padding: 12px 16px;
 }
-/*  */
+/* change display to flex and add some style to content part  */
 .content-main-per{
     display: flex;
     justify-content: space-between;
@@ -240,16 +236,16 @@ body{
     padding: 12px 16px;
     transition: all .3s;
 }
-/*  */
+/* select child 5 of list items */
 .content-main-per .child-per:nth-of-type(5){
     display: flex;
     justify-content: flex-end;
 }
-/*  */
+/* select child 3 of list items */
 .content-main-per .child-per:nth-of-type(3){
     padding-left: 30px;
 }
-/*  */
+/* when hover lists will get this background color */
 .content-main-per:hover{
     background-color: rgb(244, 244, 244);
 }
@@ -259,39 +255,39 @@ body{
     height: 32px;
     margin-left: 9px;
 }
-/*  */
+/* select span of child par div and add some style to it  */
 .child-per>span{
     margin-left: 10px;
     font-size: 16px;
     font-weight: 700;
 }
-/*  */
+/* select p of child par div and add some style to it */
 .child-per>p{
     margin: 0;
 }
-/*  */
+/* add a width to child part */
 .child-per{
     width: 225px;
 }
-/*  */
+/* change display to flex of child par first child */
 .child-per:nth-of-type(1){
     display: flex;
     align-items: center;
 }
-/*  */
+/* change display to flex of child par third child */
 .child-per:nth-of-type(3){
     color: var(--green-color);
     margin-left: 10px;
 }
-/*  */
+/* change display to flex of child par forth child */
 .child-per:nth-of-type(4){
     text-align: center;
 }
-/*  */
+/* add border bottom */
 .content-main-per:nth-child(16){
     border-bottom: 1px solid rgba(222, 222, 222, 0.607);
 }
-/*  */
+/* add some style to bottom part of main part of section 2 */
 .bottom-per{
     display: flex;
     justify-content: flex-end;
@@ -301,14 +297,14 @@ body{
     font-size: 12px;
     font-weight: 600;
 }
-/*  */
+/* select div of bottom part of section 2 */
 .bottom-per>div{
     /* margin: 0px 13px; */
     cursor: pointer;
     padding: 5px 10px;
     border-radius: 3px;
 }
-/*  */
+/* select first child of bottom part of section 2 */
 .bottom-per>div:nth-of-type(1){
     border: 1px solid #3e7bf6;
     color: #3e7bf6;
