@@ -134,3 +134,73 @@ body{
     border-radius: 0px 50px 50px 0px;
     transform: skewX(-5deg);
 }
+/* footer [START] */
+/* IMG CSS [START]*/
+footer img{
+    width: 100px;
+    height: 100px;
+    max-width: 120px;
+    font-size: 0px;
+    display: inline-block;
+    width: 95px
+}
+/*IMG CSS [END]*/
+
+footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+footer>.countainer{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.table{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer_item_card{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    width: 35%;
+}
+
+
+.footer_item_card img,.footer_item_card svg{
+    width: 33px;
+    height: 33px;
+    padding: 0;
+    margin: 0 16px 16px 0;
+    cursor: pointer;
+}
+
+
+.footer_item_card div{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footer_item_card img:hover ,.footer_item_card svg:hover{
+    transition: all 0.3s;
+    transform: translateY(-5px);
+}
+
+.footer_item_card a{
+    margin-bottom: 13px;
+}
+
+
+.footer_item_card a:first-of-type{
+    color: var(--white-text);
+    margin-bottom: 17px;
+}
+/* footer [END] */

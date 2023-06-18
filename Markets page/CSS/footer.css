@@ -34,7 +34,7 @@
 /* make css varibles */
 :root{
     --primary-color: #ffffff;
-    --grey-color: #999999;/*grey*/
+    --grey-color: rgb(102, 102, 102);/*grey*/
     --black-text: #2f2f2f;/*white*/
     --blue-color: #3E7BF6;/*blue*/
     --green-color: #3FD194;/*green*/
@@ -48,6 +48,7 @@
     margin: 0%;
     box-sizing: border-box;
     font-family:Harmony;
+    text-decoration: none;
 }
 /* GENERAL CSS [END] */
 /* add some styles to body*/
@@ -137,106 +138,66 @@ body{
     border-radius: 0px 50px 50px 0px;
     transform: skewX(-5deg);
 }
-/* section-1 [START] */
-#section-1{
-    width: 100%;
-    background: linear-gradient(#F3F7FE, #fff);
-    padding: 40px 0px;
+/* footer [START] */
+/* IMG CSS [START]*/
+footer img{
+    width: 100px;
+    height: 100px;
+    max-width: 120px;
+    font-size: 0px;
+    display: inline-block;
+    width: 95px
 }
-#section-1>.container{
+/*IMG CSS [END]*/
+footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+footer>.countainer{
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
 }
-/* title all [start] */
-
-/* title all [end] */
-/* itm-card-section-1 [start] */
-#itm-cards-section-1{
-    width: 95%;
+.table{
     display: flex;
     justify-content: space-between;
-    margin-left: 30px;
-    margin-top: 50px;
+    align-items: flex-start;
 }
-#itm-cards-section-1>div{
-    width: 31%;
+.footer_item_card{
     display: flex;
     flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    width: 35%;
 }
-#itm-cards-section-1>div>div{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+.footer_item_card img,.footer_item_card svg{
+    width: 33px;
+    height: 33px;
+    padding: 0;
+    margin: 0 16px 16px 0;
+    cursor: pointer;
 }
-#itm-cards-section-1>div>div p{
-    font-size:12px ;
-    font-weight: 400;
-    color: var(--grey-color);
-}
-#itm-cards-section-1>div>div h5{
-    font-weight: 700;
-    font-size: 14px;
-}
-#itm-cards-section-1>div>div img{
-    width: 24px;
-    height: 24px;
-}
-#itm-cards-section-1>div>div span{
-    font-size: 14px;
-    font-weight: 400;
-}
-#itm-cards-section-1>div:nth-of-type(1)>div span,#itm-cards-section-1>div:nth-of-type(3)>div span{
-    color: var(--red-color);
-}
-#itm-cards-section-1>div:nth-of-type(2)>div span{
-    color: var(--green-color);
-}
-/* code of title itm card [start]*/
-#itm-cards-section-1>div>div>.title-s-1-body{
+.footer_item_card div{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    cursor: pointer;
+
 }
-#itm-cards-section-1>div>div>.title-s-1-body>p:nth-of-type(1){
-    margin-right: 12px;
+.footer_item_card img:hover ,.footer_item_card svg:hover{
+    transition: all 0.3s;
+    transform: translateY(-5px);
 }
-#itm-cards-section-1>div>div>.title-s-1-body>p:nth-of-type(2){
-    margin-right: 110px;
+.footer_item_card a{
+    margin-bottom: 13px;
 }
-#itm-cards-section-1>div>div>.title-s-1-body>p:nth-of-type(3){
-    margin-right: 60px;
+.footer_item_card a:first-of-type{
+    color: var(--black-text);
+    margin-bottom: 17px;
 }
-/* code of title itm card [end]*/
-/* code of body itm card [start]*/
-.body-section-1{
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
+.line{
+    padding: 8px 0px;
 }
-.itm-card-section-1{
-    display: flex;
-    cursor: pointer;
-}
-.itm-card-section-1>div{
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-.itm-card-section-1>div:nth-of-type(1){
-    margin-right: 12px;
-}
-.itm-card-section-1>div:nth-of-type(2)>h5{
-    margin-left: 11px;
-}
-.itm-card-section-1>div:nth-of-type(2){
-    margin-right: 50px;
-}
-.itm-card-section-1>div:nth-of-type(3){
-    margin-right: 87px;
-}
-/* code of body itm card [end]*/
-/* itm-card-section-1 [end] */
-/* section-1 [END] */
+/* footer [END] */
