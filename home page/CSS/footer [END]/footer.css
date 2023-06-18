@@ -18,8 +18,6 @@ body{
     box-sizing: border-box;
     
 }
-
-
 /* GENERAL CSS [END] */
 /* add some styles to body*/
 body{
@@ -112,7 +110,7 @@ footer{
     border-top: 0.5px solid rgb(41, 42, 47);
     background-color: var(--background-color);
 }
-
+/* fix container */
 footer>.countainer{
     width: 100%;
     max-width: 1200px;
@@ -120,13 +118,13 @@ footer>.countainer{
     flex-direction: column;
     margin: 0 auto;
 }
-
+/* some style to table class  */
 .table{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
-
+/* change display to flex */
 .footer_item_card{
     display: flex;
     flex-direction: column;
@@ -134,8 +132,7 @@ footer>.countainer{
     align-items: flex-start;
     width: 35%;
 }
-
-
+/* some style to image of item card */
 .footer_item_card img{
     width: 33px;
     height: 33px;
@@ -143,22 +140,22 @@ footer>.countainer{
     margin: 0 16px 16px 0;
     cursor: pointer;
 }
-
+/* change display to flex */
 .footer_item_card div{
     display: flex;
     flex-wrap: wrap;
 
 }
+/* when mouse on it we can see these styles */
 .footer_item_card img:hover{
     transition: all 0.3s;
     transform: translateY(-5px);
 }
-
+/* add a margin bottom to a */
 .footer_item_card a{
     margin-bottom: 13px;
 }
-
-
+/* some style to first child of item card */
 .footer_item_card a:first-of-type{
     color: var(--white-text);
     margin-bottom: 17px;
