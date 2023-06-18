@@ -140,6 +140,8 @@ body{
 /* section-1 [START] */
 #section-1{
     width: 100%;
+    background: linear-gradient(#F3F7FE, #fff);
+    padding: 40px 0px;
 }
 #section-1>.container{
     display: flex;
