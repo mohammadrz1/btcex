@@ -1,0 +1,162 @@
+/* GENERAL CSS [START] */
+/* make css varibles */
+:root{
+    --primary-color: #0C0E11;
+    --grey-color: #999999;/*grey*/
+    --white-text: #FFFFFF;/*white*/
+    --blue-color: #3E7BF6;/*blue*/
+    --green-color: #3FD194;/*green*/
+    --red-color: #F84960; /*red*/
+    --background-color: #17181E;
+    --help-btn: #2C79B7;
+}
+/* Remove margin and padding for all of items */
+body{
+    background-color: rgb(23, 24, 30);
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+}
+/* GENERAL CSS [END] */
+/* add some styles to body*/
+body{
+    background-color: var(--background-color);
+    color: var(--white-text);
+}
+/* add style a*/
+a{
+    text-decoration: none;
+}
+
+/* add some styles to container */
+.container{
+    width: 100%;
+    max-width: 1200px;
+}
+/* text with font size 40px can get these styles*/
+.css-fo40{
+    font-size: 40px;
+    font-weight: 700;
+}
+/* text with font size 24px can get these styles*/
+.css-fo24{
+    font-size: 24px;
+    font-weight: 700;
+}
+/* text with font size 20px can get these styles*/                        
+.css-fo20{
+    font-size: 20px;
+    font-weight: 500;
+}
+/* text with font size 18px can get these styles*/
+.css-fo18{
+    font-size: 18px;
+    font-weight: 700;
+}
+/* text with font size 16px can get these styles*/
+.css-fo16{
+    font-size: 16px; /*we can use this class for numbers in chart*/
+}
+/* Paragraph with font size 20px can get these properties*/
+.css-fop20{
+    color: var(--grey-color);
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+/* Paragraph with font size 18px can get these properties*/
+.css-fop18{
+    color: var(--grey-color);
+    font-size: 18px;
+}
+/* Paragraph with font size 16px can get these properties*/
+.css-fop16{
+    color: var(--grey-color);
+    font-size: 16px;
+}
+/* Paragraph with font size 14px can get these properties*/
+.css-fop14{
+    color: var(--grey-color);
+    font-size: 14px;
+}
+/* Paragraph with font size 12px can get these properties*/
+.css-fop12{
+    color: var(--grey-color);
+    font-size: 12px;
+    font-weight: 400;
+}
+/* Add this class to btn's that skew */
+.skewX{
+    border-radius: 0px 50px 50px 0px;
+    transform: skewX(-5deg);
+}
+
+/* IMG CSS [START]*/
+footer img{
+    width: 100px;
+    height: 100px;
+    overflow-clip-margin: content-box;
+    max-width: 120px;
+    font-size: 0px;
+    display: inline-block;
+    width: 95px
+}
+/*IMG CSS [END]*/
+
+footer{
+    width: 100%;
+    text-align: center;
+    border-top: 0.5px solid rgb(41, 42, 47);
+    background-color: var(--background-color);
+}
+/* fix container */
+footer>.countainer{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+/* some style to table class  */
+.table{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/* change display to flex */
+.footer_item_card{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    width: 35%;
+}
+/* some style to image of item card */
+.footer_item_card img{
+    width: 33px;
+    height: 33px;
+    padding: 0;
+    margin: 0 16px 16px 0;
+    cursor: pointer;
+}
+/* change display to flex */
+.footer_item_card div{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* when mouse on it we can see these styles */
+.footer_item_card img:hover{
+    transition: all 0.3s;
+    transform: translateY(-5px);
+}
+/* add a margin bottom to a */
+.footer_item_card a{
+    margin-bottom: 13px;
+}
+/* some style to first child of item card */
+.footer_item_card a:first-of-type{
+    color: var(--white-text);
+    margin-bottom: 17px;
+}

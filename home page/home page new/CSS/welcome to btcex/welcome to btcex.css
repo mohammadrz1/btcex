@@ -1,0 +1,333 @@
+/* add font  [START]*/
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Thin.ttf);
+    font-weight: 100;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Light.ttf);
+    font-weight: 300;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Medium.ttf);
+    font-weight: 500;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Bold.ttf);
+    font-weight:700;
+}
+@font-face{
+    font-family:Harmony ;
+    src: url(fonts/HarmonyOS_Sans_Black.ttf);
+    font-weight: 900;
+}
+/* add font  [END]*/
+/* GENERAL CSS [START] */
+/* make css varibles */
+:root{
+    --primary-color: #0C0E11;
+    --grey-color: #999999;/*grey*/
+    --white-text: #FFFFFF;/*white*/
+    --blue-color: #3E7BF6;/*blue*/
+    --green-color: #3FD194;/*green*/
+    --red-color: #F84960; /*red*/
+    --background-color: #17181E;
+    --bg-dropdown: rgb(28, 30, 34);
+    --help-btn: #2C79B7;
+}
+/* Remove margin and padding for all of items */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Harmony;
+}
+/* GENERAL CSS [END] */
+/* add some styles to body*/
+body{
+    background-color: var(--primary-color);
+    color: var(--white-text);
+}
+/* add some styles to container */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+/* text with font size 56px can get these styles*/
+.css-fo56{
+    font-size: 56px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* text with font size 40px can get these styles*/
+.css-fo40{
+    font-size: 40px;
+    font-weight: 700;
+}
+/* text with font size 24px can get these styles*/
+.css-fo24{
+    font-size: 24px;
+    font-weight: 700;
+}
+/* text with font size 20px can get these styles*/                        
+.css-fo20{
+    font-size: 20px;
+    font-weight: 700;
+}
+/* text with font size 18px can get these styles*/
+.css-fo18{
+    font-size: 18px;
+    font-weight: 700;
+}
+/* text with font size 16px can get these styles*/
+.css-fo16{
+    font-size: 16px; /*we can use this class for numbers in chart*/
+}
+/* Paragraph with font size 20px can get these properties*/
+.css-fop20{
+    color: var(--grey-color);
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+/* Paragraph with font size 18px can get these properties*/
+.css-fop18{
+    color: var(--grey-color);
+    font-size: 18px;
+}
+/* Paragraph with font size 16px can get these properties*/
+.css-fop16{
+    color: var(--grey-color);
+    font-size: 16px;
+}
+/* Paragraph with font size 14px can get these properties*/
+.css-fop14{
+    color: var(--grey-color);
+    font-size: 14px;
+}
+/* Add this class to btn's that skew */
+.skewX{
+    border-radius: 0px 50px 50px 0px;
+    transform: skewX(-5deg);
+}
+/* section welcome to btcex [start] */
+.section-one>.container{
+    display: flex;
+    flex-direction: column;
+}
+.css-1dwg3de{
+    padding-top: 96px;
+}
+.css-1dwg3de p{
+    max-width: 520px;
+    margin-top: 22px;
+    margin-bottom: 0;
+    line-height: 23px;
+}
+/* banner part of first div */
+.css-1dwg3de img{
+    height: 480px;
+    position: absolute;
+    top: 0px;
+    right: -110px;
+    translate: 0px 50px;
+    z-index: 0;
+}
+/* some style for form get start */
+.css-t5wkz3{
+    display: flex;
+    margin-top: 72px;
+}
+/* some style for email input/width... */
+.css-t5wkz3 div{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 280px;
+    height: 55px;
+    cursor: text;
+    position: relative;
+}
+.css-t5wkz3 input{
+    outline: none;
+    z-index: 1;
+    position: relative;
+    border: 0;
+    background: none;
+    width: 100%;
+    padding: 15px 20px;
+    color: var(--white-text);
+    opacity: .7;
+}
+.css-t5wkz3 div::after{
+    position: absolute;
+    content: '';
+    inset: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: var(--background-color);
+    border: 1px solid #3E7BF6;
+    border-radius: 4px;
+}
+.css-t5wkz3 input:focus{
+    border: 1px solid #14588f;
+    border-radius: 4px;
+
+}
+.css-t5wkz3 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-color);
+    text-decoration: none;
+    color: var(--white-text);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0px 28px;
+    margin-left: 16px;
+}
+/* div of apple/bot/playstore..link some style for them */
+.btcex-af6q1m{
+    display: flex;
+    margin-top: 40px;
+}
+.btcex-af6q1m a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    width: 48px;
+    height: 48px;
+    border: 1px solid #292a2f;
+    border-radius: 8px;
+}
+.btcex-af6q1m img{
+    width: 33px;
+}
+/* some style for swiper-initial*/
+.swiper-initial{
+    margin-top: 110px;
+    z-index: 1;
+    position: relative;
+}
+.swiper-wrapper{
+    display: flex;
+    gap: 14px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+@keyframes swiper{
+    0%{
+        transform: translateX(0px);
+    }
+    20%{
+        transform: translateX(-1180px);
+    }
+    30%{
+        transform: translateX(-1180px);
+    }
+    90%{
+        transform: translateX(-2350px);
+    }
+    100%{
+        transform: translateX(-2350px);
+    }
+}
+.swiper-wrapper div{
+    animation: swiper 10s ease-in-out infinite 1s;
+}
+.swiper-wrapper img{
+    width: 380px;
+    border-radius: 10px;
+}
+.btcex-15bnogv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+.btcex-15bnogv>span>img{
+    width: 30px;
+}
+.marquee{
+    overflow: hidden;
+    height: 30px;
+    width: 100%;
+}
+.marquee .swiper-slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    color: var(--grey-color);
+    padding: 6px 0px;
+    animation: swiper-slide 10s ease-in-out infinite 1s;
+}
+@keyframes swiper-slide{
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(-40px);
+    }
+    20% {
+        transform: translateY(-40px);
+    }
+    30% {
+        transform: translateY(-80px);
+    }
+    40% {
+        transform: translateY(-80px);
+    }
+    50% {
+        transform: translateY(-120px);
+    }
+    60% {
+        transform: translateY(-120px);
+    }
+    70% {
+        transform: translateY(-160px);
+    }
+    80% {
+        transform: translateY(-160px);
+    }
+    90% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(-200px);
+    }
+}
+.more-link{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.more-link:first-of-type{
+    color: var(--white-text);
+    text-decoration: none;
+    padding-top: 2px;
+    font-size: 14px;
+}
+.more-link>span>svg{
+    width: 12px;
+}
+/* section welcome to btcex [end] */
