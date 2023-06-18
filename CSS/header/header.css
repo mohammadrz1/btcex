@@ -141,6 +141,7 @@ header{
     width: 100%;
     height: 65px;
     position: fixed;
+    top: 0;
     z-index: 10;
 }
 /* header left of home page change display to flex */
