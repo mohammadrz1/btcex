@@ -6,10 +6,10 @@ https://www.btcex.com/en-us/
 
 
 ## Description
-> This is a practice project for html css and it was made from an exchange site that was already on the internet
-> Has 3 pages
-  > home
-  > sweetdrop
+> This is a practice project for html css and it was made from an exchange site that was already on the internet<br>
+> Has 3 pages<br>
+  > home ,
+  > sweetdrop ,
   > Markets
 
 
